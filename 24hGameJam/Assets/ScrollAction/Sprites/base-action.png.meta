@@ -1,0 +1,1601 @@
+fileFormatVersion: 2
+guid: 1728cea8b3666c1499ef900293b2f8b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7818376059123484703
+    second: base-action_0
+  - first:
+      213: 3864208020676505731
+    second: base-action_1
+  - first:
+      213: 7187238477559814717
+    second: base-action_2
+  - first:
+      213: -845155794021130798
+    second: base-action_3
+  - first:
+      213: 1376129278101571060
+    second: base-action_4
+  - first:
+      213: -1867913170690187233
+    second: base-action_5
+  - first:
+      213: -8998556316244734173
+    second: base-action_6
+  - first:
+      213: 656380717061531990
+    second: base-action_7
+  - first:
+      213: -1445191222462394640
+    second: base-action_8
+  - first:
+      213: -1380034273398868752
+    second: base-action_9
+  - first:
+      213: 7865999828854702500
+    second: base-action_10
+  - first:
+      213: 2022365459323485422
+    second: base-action_11
+  - first:
+      213: 7624753748660318132
+    second: base-action_12
+  - first:
+      213: 2723873976426217949
+    second: base-action_13
+  - first:
+      213: 3446678388015064483
+    second: base-action_14
+  - first:
+      213: -7732727388031011621
+    second: base-action_15
+  - first:
+      213: 2439772925302366956
+    second: base-action_16
+  - first:
+      213: -2717612943447871803
+    second: base-action_17
+  - first:
+      213: -7510047720133233881
+    second: base-action_18
+  - first:
+      213: -5259183270061864448
+    second: base-action_19
+  - first:
+      213: 914963170077063901
+    second: base-action_20
+  - first:
+      213: 2057097696071850910
+    second: base-action_21
+  - first:
+      213: -9097614286228054961
+    second: base-action_22
+  - first:
+      213: 7490198194953424669
+    second: base-action_23
+  - first:
+      213: 4981217883781813866
+    second: base-action_24
+  - first:
+      213: 6392745174698080561
+    second: base-action_25
+  - first:
+      213: 4892853618776041502
+    second: base-action_26
+  - first:
+      213: -9044825945181956695
+    second: base-action_27
+  - first:
+      213: -4270355339711135019
+    second: base-action_28
+  - first:
+      213: 2226893420259670496
+    second: base-action_29
+  - first:
+      213: -1497708940628663271
+    second: base-action_30
+  - first:
+      213: -3203525838720726689
+    second: base-action_31
+  - first:
+      213: 1119896185057520250
+    second: base-action_32
+  - first:
+      213: 2580866860363542705
+    second: base-action_33
+  - first:
+      213: -1992709970659736424
+    second: base-action_34
+  - first:
+      213: 7932727943806122160
+    second: base-action_35
+  - first:
+      213: 6022564051445805953
+    second: base-action_36
+  - first:
+      213: 6984581953334570343
+    second: base-action_37
+  - first:
+      213: 6122421210442566713
+    second: base-action_38
+  - first:
+      213: -2302627149981964921
+    second: base-action_39
+  - first:
+      213: 3632476766109433385
+    second: base-action_40
+  - first:
+      213: -5979344009138181910
+    second: base-action_41
+  - first:
+      213: -6797453683039932195
+    second: base-action_42
+  - first:
+      213: -5092512997024353199
+    second: base-action_43
+  - first:
+      213: 1238399974941512593
+    second: base-action_44
+  - first:
+      213: 8235190116550843982
+    second: base-action_45
+  - first:
+      213: -1577891130213061192
+    second: base-action_46
+  - first:
+      213: 832935236019151373
+    second: base-action_47
+  - first:
+      213: -6221206711634745130
+    second: base-action_48
+  - first:
+      213: -7053738306914750528
+    second: base-action_49
+  - first:
+      213: 7480412633204535879
+    second: base-action_50
+  - first:
+      213: 7404385541661133881
+    second: base-action_51
+  - first:
+      213: 7387179396343507836
+    second: base-action_52
+  - first:
+      213: 832497964181557398
+    second: base-action_53
+  - first:
+      213: 2145826391196797681
+    second: base-action_54
+  - first:
+      213: -8024925922081708871
+    second: base-action_55
+  - first:
+      213: 1946508801258527931
+    second: base-action_56
+  - first:
+      213: -3388062640288681240
+    second: base-action_57
+  - first:
+      213: -4807309462124323923
+    second: base-action_58
+  - first:
+      213: 4169489445107884426
+    second: base-action_59
+  - first:
+      213: -481348167964994983
+    second: base-action_60
+  - first:
+      213: 2121108288125119552
+    second: base-action_61
+  - first:
+      213: -870729879743937812
+    second: base-action_62
+  - first:
+      213: 3491613924718226416
+    second: base-action_63
+  - first:
+      213: 4842720967167807567
+    second: base-action_64
+  - first:
+      213: -7234591288969477723
+    second: base-action_65
+  - first:
+      213: -7508633032498809473
+    second: base-action_66
+  - first:
+      213: 4365434060352332914
+    second: base-action_67
+  - first:
+      213: -4533374787229328344
+    second: base-action_68
+  - first:
+      213: 3211357048039096272
+    second: base-action_69
+  - first:
+      213: -5056086033330210682
+    second: base-action_70
+  - first:
+      213: -5148949863464825804
+    second: base-action_71
+  - first:
+      213: 6210299877582527176
+    second: base-action_72
+  - first:
+      213: 6484454143867426703
+    second: base-action_73
+  - first:
+      213: -1078164634482793181
+    second: base-action_74
+  - first:
+      213: 3812216990112105148
+    second: base-action_75
+  - first:
+      213: 4336714988286239916
+    second: base-action_76
+  - first:
+      213: 9120461739507563371
+    second: base-action_77
+  - first:
+      213: -1402567500585737096
+    second: base-action_78
+  - first:
+      213: 506574945167476657
+    second: base-action_79
+  - first:
+      213: -6043009227145223748
+    second: base-action_80
+  - first:
+      213: -5265851160740654952
+    second: base-action_81
+  - first:
+      213: -3300556107436556786
+    second: base-action_82
+  - first:
+      213: 4857105499833421174
+    second: base-action_83
+  - first:
+      213: -5458736712543642650
+    second: base-action_84
+  - first:
+      213: 4748098411402842349
+    second: base-action_85
+  - first:
+      213: 1948067125264155525
+    second: base-action_86
+  - first:
+      213: -4707258960942381526
+    second: base-action_87
+  - first:
+      213: 3053848329497904447
+    second: base-action_88
+  - first:
+      213: 3123016876144722786
+    second: base-action_89
+  - first:
+      213: -3363031563376083483
+    second: base-action_90
+  - first:
+      213: 4343703031590746006
+    second: base-action_91
+  - first:
+      213: 927220465471283516
+    second: base-action_92
+  - first:
+      213: 1399869066393355453
+    second: base-action_93
+  - first:
+      213: -5473278146659310629
+    second: base-action_94
+  - first:
+      213: 3164586300464878725
+    second: base-action_95
+  - first:
+      213: 6340220175388441983
+    second: base-action_96
+  - first:
+      213: -2513859019029432230
+    second: base-action_97
+  - first:
+      213: 1147981790945744199
+    second: base-action_98
+  - first:
+      213: 2198222025589621527
+    second: base-action_99
+  - first:
+      213: 6852128433754105108
+    second: base-action_100
+  - first:
+      213: 7659147243229936274
+    second: base-action_101
+  - first:
+      213: -4573729391607441476
+    second: base-action_102
+  - first:
+      213: -7335952494771715506
+    second: base-action_103
+  - first:
+      213: 6020012200575642467
+    second: base-action_104
+  - first:
+      213: -344977588486060440
+    second: base-action_105
+  - first:
+      213: -4006617060561728587
+    second: base-action_106
+  - first:
+      213: 565911730847655091
+    second: base-action_107
+  - first:
+      213: -2744557845164889247
+    second: base-action_108
+  - first:
+      213: 4934470878321604441
+    second: base-action_109
+  - first:
+      213: 7812113469651405078
+    second: base-action_110
+  - first:
+      213: 3891212346407004329
+    second: base-action_111
+  - first:
+      213: -1559813745024265678
+    second: base-action_112
+  - first:
+      213: 5424170742087682508
+    second: base-action_113
+  - first:
+      213: -5105922424001497361
+    second: base-action_114
+  - first:
+      213: -4071166937049121
+    second: base-action_115
+  - first:
+      213: -7746348565825321174
+    second: base-action_116
+  - first:
+      213: 8095800950394314300
+    second: base-action_117
+  - first:
+      213: 6900620789382927257
+    second: base-action_118
+  - first:
+      213: 5146189528012288131
+    second: base-action_119
+  - first:
+      213: 43839050879958643
+    second: base-action_120
+  - first:
+      213: -8570373895587695344
+    second: base-action_121
+  - first:
+      213: 1124706917750921334
+    second: base-action_122
+  - first:
+      213: 1576181440888457135
+    second: base-action_123
+  - first:
+      213: -7930154576100693681
+    second: base-action_124
+  - first:
+      213: -2225963228244202289
+    second: base-action_125
+  - first:
+      213: 5419435587246927051
+    second: base-action_126
+  - first:
+      213: 4210188305056119673
+    second: base-action_127
+  - first:
+      213: -9182993688634208756
+    second: base-action_128
+  - first:
+      213: -1990850785142598564
+    second: base-action_129
+  - first:
+      213: -1712363291601243925
+    second: base-action_130
+  - first:
+      213: -7954571453719413299
+    second: base-action_131
+  - first:
+      213: 7614697196339457721
+    second: base-action_132
+  - first:
+      213: 6480040794522335830
+    second: base-action_133
+  - first:
+      213: -3524872829077708895
+    second: base-action_134
+  - first:
+      213: -8029803135827053247
+    second: base-action_135
+  - first:
+      213: -9058663047941037575
+    second: base-action_136
+  - first:
+      213: -8182133486060355991
+    second: base-action_137
+  - first:
+      213: 3166067278071456388
+    second: base-action_138
+  - first:
+      213: -1699198935690153322
+    second: base-action_139
+  - first:
+      213: -276872421101154209
+    second: base-action_140
+  - first:
+      213: 851411469319132262
+    second: base-action_141
+  - first:
+      213: 2021873802895720846
+    second: base-action_142
+  - first:
+      213: 2095209472431320144
+    second: base-action_143
+  - first:
+      213: 1731570184930542242
+    second: base-action_144
+  - first:
+      213: -8189886894375774823
+    second: base-action_145
+  - first:
+      213: 1511592208948087344
+    second: base-action_146
+  - first:
+      213: -4452904184586688414
+    second: base-action_147
+  - first:
+      213: -3745623858721674637
+    second: base-action_148
+  - first:
+      213: 4448186435628476579
+    second: base-action_149
+  - first:
+      213: 8492401206095737714
+    second: base-action_150
+  - first:
+      213: -8189107234121518094
+    second: base-action_151
+  - first:
+      213: 376960471522255352
+    second: base-action_152
+  - first:
+      213: 1401924192563904549
+    second: base-action_153
+  - first:
+      213: 6873884942188487179
+    second: base-action_154
+  - first:
+      213: -1273659885294882435
+    second: base-action_155
+  - first:
+      213: 4964742726167183176
+    second: base-action_156
+  - first:
+      213: 3578057777438423028
+    second: base-action_157
+  - first:
+      213: 1883846611785559109
+    second: base-action_158
+  - first:
+      213: 1985038531657599074
+    second: base-action_159
+  - first:
+      213: 5262011266123688810
+    second: base-action_160
+  - first:
+      213: -4107369456845054752
+    second: base-action_161
+  - first:
+      213: -7471174180724890171
+    second: base-action_162
+  - first:
+      213: 3853048175568918618
+    second: base-action_163
+  - first:
+      213: 7503653217459027873
+    second: base-action_164
+  - first:
+      213: 6022163389204229918
+    second: base-action_165
+  - first:
+      213: -5244522309854195072
+    second: base-action_166
+  - first:
+      213: 2612444062126802702
+    second: base-action_167
+  - first:
+      213: 3553620184143893162
+    second: base-action_168
+  - first:
+      213: 5595571598351335993
+    second: base-action_169
+  - first:
+      213: 2543614506232229481
+    second: base-action_170
+  - first:
+      213: -8241781933699211791
+    second: base-action_171
+  - first:
+      213: -7494940087060086128
+    second: base-action_172
+  - first:
+      213: -8622747383564610606
+    second: base-action_173
+  - first:
+      213: 2009482087829921323
+    second: base_idle_00
+  - first:
+      213: 860004232465481907
+    second: base_idle_01
+  - first:
+      213: -8971106716417835301
+    second: base_idle_02
+  - first:
+      213: 4516532220202369019
+    second: base_idle_03
+  - first:
+      213: 1989311753122089912
+    second: base_idle_04
+  - first:
+      213: -4909152371707175496
+    second: base_idle_05
+  - first:
+      213: -2972315926716754726
+    second: base_idle_06
+  - first:
+      213: -1796300517790798252
+    second: base_walk_00
+  - first:
+      213: -612710651922978513
+    second: base_walk_01
+  - first:
+      213: -8919604798263512741
+    second: base_walk_02
+  - first:
+      213: -7104648364522692462
+    second: base_walk_03
+  - first:
+      213: -6611850602991522392
+    second: base_walk_04
+  - first:
+      213: -5893487515770776465
+    second: base_walk_05
+  - first:
+      213: -5014270607927964256
+    second: base_walk_06
+  - first:
+      213: -8048167985968755243
+    second: base_jump_00
+  - first:
+      213: -1175841733749505852
+    second: base_jump_01
+  - first:
+      213: -8416980204205113083
+    second: base_jump_02
+  - first:
+      213: 8760319900094644110
+    second: base_jump_03
+  - first:
+      213: -7295502294217935906
+    second: base_jump_04
+  - first:
+      213: 8515070714567642415
+    second: base_jump_05
+  - first:
+      213: -6335268798077163600
+    second: base_jump_06
+  - first:
+      213: -763253904222185155
+    second: base_jump_07
+  - first:
+      213: 5030267036114735761
+    second: base_crouch_00
+  - first:
+      213: -2264683795190844740
+    second: base_crouch_01
+  - first:
+      213: 7695398000268449747
+    second: base_crouch_02
+  - first:
+      213: 8497289843882581354
+    second: base_crouch_03
+  - first:
+      213: -9038568264240787926
+    second: base_crouch_04
+  - first:
+      213: 6011618176356078897
+    second: base_crouch_05
+  - first:
+      213: -4041922208369633403
+    second: base_crouch_06
+  - first:
+      213: 900402522312538299
+    second: base_crouch_07
+  - first:
+      213: 7124752448407130071
+    second: base_crouch_08
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: base_idle_00
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 827
+        width: 63
+        height: 162
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2edc9bef4d13eb10800000000000000
+      internalID: 2009482087829921323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_idle_01
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 827
+        width: 63
+        height: 162
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0007dfa495feb00800000000000000
+      internalID: 860004232465481907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_idle_02
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 827
+        width: 63
+        height: 164
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde3bcde8f9308380800000000000000
+      internalID: -8971106716417835301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_idle_03
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 827
+        width: 63
+        height: 164
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bffb4c9ef12fdae30800000000000000
+      internalID: 4516532220202369019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_idle_04
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 827
+        width: 63
+        height: 163
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb0a58ef747b9b10800000000000000
+      internalID: 1989311753122089912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_idle_05
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 827
+        width: 63
+        height: 164
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd90208def2fdbb0800000000000000
+      internalID: -4909152371707175496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_walk_00
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 583
+        width: 86
+        height: 158
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45eaa3f32324217e0800000000000000
+      internalID: -1796300517790798252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_walk_01
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 583
+        width: 87
+        height: 158
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29680a88e63f77f0800000000000000
+      internalID: -612710651922978513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_walk_02
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 583
+        width: 81
+        height: 157
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5132aea1b2373480800000000000000
+      internalID: -8919604798263512741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_walk_03
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 584
+        width: 80
+        height: 156
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 290a09a54f7376d90800000000000000
+      internalID: -7104648364522692462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_walk_04
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 584
+        width: 89
+        height: 158
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8adecbc58ecfd34a0800000000000000
+      internalID: -6611850602991522392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_walk_05
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 584
+        width: 86
+        height: 157
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6498465450263ea0800000000000000
+      internalID: -5893487515770776465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_walk_06
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 583
+        width: 79
+        height: 158
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad85c6e27bb96ab0800000000000000
+      internalID: -5014270607927964256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_jump_00
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 298
+        width: 73
+        height: 127
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd49a79bd92f4090800000000000000
+      internalID: -8048167985968755243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_jump_01
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 286
+        width: 85
+        height: 163
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c008cb4c229eafe0800000000000000
+      internalID: -1175841733749505852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_jump_02
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 293
+        width: 79
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5010cde6911e03b80800000000000000
+      internalID: -8416980204205113083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_jump_03
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 288
+        width: 75
+        height: 221
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f3de3f888e29970800000000000000
+      internalID: 8760319900094644110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_jump_04
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 294
+        width: 79
+        height: 213
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3b71f015b21ca90800000000000000
+      internalID: -7295502294217935906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_jump_05
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 291
+        width: 77
+        height: 166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2dc22b33bb9b2670800000000000000
+      internalID: 8515070714567642415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_jump_06
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 298
+        width: 73
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7aef5089a9418a0800000000000000
+      internalID: -6335268798077163600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_jump_07
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 318
+        width: 61
+        height: 143
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3918653e906865f0800000000000000
+      internalID: -763253904222185155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_crouch_00
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 49
+        width: 63
+        height: 190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 192d9f4c7391fc540800000000000000
+      internalID: 5030267036114735761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_crouch_01
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 49
+        width: 65
+        height: 167
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2f01b461a3290e0800000000000000
+      internalID: -2264683795190844740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_crouch_02
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 55
+        width: 74
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7904395bb8bca60800000000000000
+      internalID: 7695398000268449747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_crouch_03
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 51
+        width: 75
+        height: 137
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6dd72aa7107ce570800000000000000
+      internalID: 8497289843882581354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_crouch_04
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 57
+        width: 75
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e0fc35d0e809280800000000000000
+      internalID: -9038568264240787926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_crouch_05
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 54
+        width: 73
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1355cf661ee8d6350800000000000000
+      internalID: 6011618176356078897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_crouch_06
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 61
+        width: 71
+        height: 169
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5879d50aa2538e7c0800000000000000
+      internalID: -4041922208369633403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_crouch_07
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 55
+        width: 61
+        height: 181
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8fd41d25fde7c00800000000000000
+      internalID: 900402522312538299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      base-action_0: 7818376059123484703
+      base-action_1: 3864208020676505731
+      base-action_10: 7865999828854702500
+      base-action_100: 6852128433754105108
+      base-action_101: 7659147243229936274
+      base-action_102: -4573729391607441476
+      base-action_103: -7335952494771715506
+      base-action_104: 6020012200575642467
+      base-action_105: -344977588486060440
+      base-action_106: -4006617060561728587
+      base-action_107: 565911730847655091
+      base-action_108: -2744557845164889247
+      base-action_109: 4934470878321604441
+      base-action_11: 2022365459323485422
+      base-action_110: 7812113469651405078
+      base-action_111: 3891212346407004329
+      base-action_112: -1559813745024265678
+      base-action_113: 5424170742087682508
+      base-action_114: -5105922424001497361
+      base-action_115: -4071166937049121
+      base-action_116: -7746348565825321174
+      base-action_117: 8095800950394314300
+      base-action_118: 6900620789382927257
+      base-action_119: 5146189528012288131
+      base-action_12: 7624753748660318132
+      base-action_120: 43839050879958643
+      base-action_121: -8570373895587695344
+      base-action_122: 1124706917750921334
+      base-action_123: 1576181440888457135
+      base-action_124: -7930154576100693681
+      base-action_125: -2225963228244202289
+      base-action_126: 5419435587246927051
+      base-action_127: 4210188305056119673
+      base-action_128: -9182993688634208756
+      base-action_129: -1990850785142598564
+      base-action_13: 2723873976426217949
+      base-action_130: -1712363291601243925
+      base-action_131: -7954571453719413299
+      base-action_132: 7614697196339457721
+      base-action_133: 6480040794522335830
+      base-action_134: -3524872829077708895
+      base-action_135: -8029803135827053247
+      base-action_136: -9058663047941037575
+      base-action_137: -8182133486060355991
+      base-action_138: 3166067278071456388
+      base-action_139: -1699198935690153322
+      base-action_14: 3446678388015064483
+      base-action_140: -276872421101154209
+      base-action_141: 851411469319132262
+      base-action_142: 2021873802895720846
+      base-action_143: 2095209472431320144
+      base-action_144: 1731570184930542242
+      base-action_145: -8189886894375774823
+      base-action_146: 1511592208948087344
+      base-action_147: -4452904184586688414
+      base-action_148: -3745623858721674637
+      base-action_149: 4448186435628476579
+      base-action_15: -7732727388031011621
+      base-action_150: 8492401206095737714
+      base-action_151: -8189107234121518094
+      base-action_152: 376960471522255352
+      base-action_153: 1401924192563904549
+      base-action_154: 6873884942188487179
+      base-action_155: -1273659885294882435
+      base-action_156: 4964742726167183176
+      base-action_157: 3578057777438423028
+      base-action_158: 1883846611785559109
+      base-action_159: 1985038531657599074
+      base-action_16: 2439772925302366956
+      base-action_160: 5262011266123688810
+      base-action_161: -4107369456845054752
+      base-action_162: -7471174180724890171
+      base-action_163: 3853048175568918618
+      base-action_164: 7503653217459027873
+      base-action_165: 6022163389204229918
+      base-action_166: -5244522309854195072
+      base-action_167: 2612444062126802702
+      base-action_168: 3553620184143893162
+      base-action_169: 5595571598351335993
+      base-action_17: -2717612943447871803
+      base-action_170: 2543614506232229481
+      base-action_171: -8241781933699211791
+      base-action_172: -7494940087060086128
+      base-action_173: -8622747383564610606
+      base-action_18: -7510047720133233881
+      base-action_19: -5259183270061864448
+      base-action_2: 7187238477559814717
+      base-action_20: 914963170077063901
+      base-action_21: 2057097696071850910
+      base-action_22: -9097614286228054961
+      base-action_23: 7490198194953424669
+      base-action_24: 4981217883781813866
+      base-action_25: 6392745174698080561
+      base-action_26: 4892853618776041502
+      base-action_27: -9044825945181956695
+      base-action_28: -4270355339711135019
+      base-action_29: 2226893420259670496
+      base-action_3: -845155794021130798
+      base-action_30: -1497708940628663271
+      base-action_31: -3203525838720726689
+      base-action_32: 1119896185057520250
+      base-action_33: 2580866860363542705
+      base-action_34: -1992709970659736424
+      base-action_35: 7932727943806122160
+      base-action_36: 6022564051445805953
+      base-action_37: 6984581953334570343
+      base-action_38: 6122421210442566713
+      base-action_39: -2302627149981964921
+      base-action_4: 1376129278101571060
+      base-action_40: 3632476766109433385
+      base-action_41: -5979344009138181910
+      base-action_42: -6797453683039932195
+      base-action_43: -5092512997024353199
+      base-action_44: 1238399974941512593
+      base-action_45: 8235190116550843982
+      base-action_46: -1577891130213061192
+      base-action_47: 832935236019151373
+      base-action_48: -6221206711634745130
+      base-action_49: -7053738306914750528
+      base-action_5: -1867913170690187233
+      base-action_50: 7480412633204535879
+      base-action_51: 7404385541661133881
+      base-action_52: 7387179396343507836
+      base-action_53: 832497964181557398
+      base-action_54: 2145826391196797681
+      base-action_55: -8024925922081708871
+      base-action_56: 1946508801258527931
+      base-action_57: -3388062640288681240
+      base-action_58: -4807309462124323923
+      base-action_59: 4169489445107884426
+      base-action_6: -8998556316244734173
+      base-action_60: -481348167964994983
+      base-action_61: 2121108288125119552
+      base-action_62: -870729879743937812
+      base-action_63: 3491613924718226416
+      base-action_64: 4842720967167807567
+      base-action_65: -7234591288969477723
+      base-action_66: -7508633032498809473
+      base-action_67: 4365434060352332914
+      base-action_68: -4533374787229328344
+      base-action_69: 3211357048039096272
+      base-action_7: 656380717061531990
+      base-action_70: -5056086033330210682
+      base-action_71: -5148949863464825804
+      base-action_72: 6210299877582527176
+      base-action_73: 6484454143867426703
+      base-action_74: -1078164634482793181
+      base-action_75: 3812216990112105148
+      base-action_76: 4336714988286239916
+      base-action_77: 9120461739507563371
+      base-action_78: -1402567500585737096
+      base-action_79: 506574945167476657
+      base-action_8: -1445191222462394640
+      base-action_80: -6043009227145223748
+      base-action_81: -5265851160740654952
+      base-action_82: -3300556107436556786
+      base-action_83: 4857105499833421174
+      base-action_84: -5458736712543642650
+      base-action_85: 4748098411402842349
+      base-action_86: 1948067125264155525
+      base-action_87: -4707258960942381526
+      base-action_88: 3053848329497904447
+      base-action_89: 3123016876144722786
+      base-action_9: -1380034273398868752
+      base-action_90: -3363031563376083483
+      base-action_91: 4343703031590746006
+      base-action_92: 927220465471283516
+      base-action_93: 1399869066393355453
+      base-action_94: -5473278146659310629
+      base-action_95: 3164586300464878725
+      base-action_96: 6340220175388441983
+      base-action_97: -2513859019029432230
+      base-action_98: 1147981790945744199
+      base-action_99: 2198222025589621527
+      base_crouch_00: 5030267036114735761
+      base_crouch_01: -2264683795190844740
+      base_crouch_02: 7695398000268449747
+      base_crouch_03: 8497289843882581354
+      base_crouch_04: -9038568264240787926
+      base_crouch_05: 6011618176356078897
+      base_crouch_06: -4041922208369633403
+      base_crouch_07: 900402522312538299
+      base_crouch_08: 7124752448407130071
+      base_idle_00: 2009482087829921323
+      base_idle_01: 860004232465481907
+      base_idle_02: -8971106716417835301
+      base_idle_03: 4516532220202369019
+      base_idle_04: 1989311753122089912
+      base_idle_05: -4909152371707175496
+      base_idle_06: -2972315926716754726
+      base_jump_00: -8048167985968755243
+      base_jump_01: -1175841733749505852
+      base_jump_02: -8416980204205113083
+      base_jump_03: 8760319900094644110
+      base_jump_04: -7295502294217935906
+      base_jump_05: 8515070714567642415
+      base_jump_06: -6335268798077163600
+      base_jump_07: -763253904222185155
+      base_walk_00: -1796300517790798252
+      base_walk_01: -612710651922978513
+      base_walk_02: -8919604798263512741
+      base_walk_03: -7104648364522692462
+      base_walk_04: -6611850602991522392
+      base_walk_05: -5893487515770776465
+      base_walk_06: -5014270607927964256
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
