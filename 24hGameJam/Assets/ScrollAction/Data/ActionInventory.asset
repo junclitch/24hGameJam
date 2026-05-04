@@ -12,9 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99289a2db1abfdc4d96479802833a40e, type: 3}
   m_Name: ActionInventory
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.ActionInventory
-  hasHorizontalMove: 1
-  hasAccelDecel: 1
-  hasJump: 1
-  hasGroundCheck: 1
-  hasDoubleJump: 0
-  hasDash: 0
+  defaults: {fileID: 11400000, guid: 7fb150ba2fc0b8b47a4c692de2619773, type: 2}
+  owned: []
