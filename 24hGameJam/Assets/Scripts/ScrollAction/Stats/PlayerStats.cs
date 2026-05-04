@@ -26,5 +26,9 @@ namespace ScrollAction
 
         // 接地と見なすレイヤ
         public LayerMask groundLayer;
+
+        [Header("Dash")]
+        // ダッシュ時に与える水平方向の瞬間速度 (units/sec)
+        public float dashSpeed;
     }
 }
