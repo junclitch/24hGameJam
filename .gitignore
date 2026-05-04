@@ -95,3 +95,17 @@ copilot-*.md
 .geminiignore
 .agent/
 GEMINI.md
+
+# =============================================================
+# MCP (Model Context Protocol) settings
+# =============================================================
+.mcp.json
+mcp.json
+.cursor/mcp.json
+.mcp/
+MCP_Screenshots/
+
+# =============================================================
+# Indivisual workspace
+# =============================================================
+colla_workspace/
