@@ -27,8 +27,8 @@ namespace ScrollAction
         // 接地と見なすレイヤ
         public LayerMask groundLayer;
 
-        [Header("Dash")]
-        // ダッシュ時に与える水平方向の瞬間速度 (units/sec)
-        public float dashSpeed;
+        [Header("Evasion")]
+        // 回避 (地上/空中共通) で与える水平方向の瞬間速度 (units/sec)
+        public float evasionSpeed;
     }
 }
