@@ -1644,6 +1644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.PlayerController
   stats: {fileID: 11400000, guid: 22dafca2a772462498d0162a1fdf4c7c, type: 2}
+  inventory: {fileID: 11400000, guid: cc5087f2b96e0634aa5e0e6d63515441, type: 2}
   groundCheck: {fileID: 1230788394}
   rb: {fileID: 2009573006}
 --- !u!61 &2009573005
