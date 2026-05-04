@@ -35,6 +35,10 @@ namespace MCPTest
             AliveCount--;
         }
 
+        /// <summary>
+        /// 衝突時に呼ばれるコールバック。
+        /// Ball タグの相手と衝突したときだけ、得点イベントを発火して自分を破棄する。
+        /// </summary>
         void OnCollisionEnter2D(Collision2D collision)
         {
             // FSMによるゲート: プレイ中以外はブロックは反応しない

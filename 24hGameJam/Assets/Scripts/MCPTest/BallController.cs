@@ -84,13 +84,19 @@ namespace MCPTest
             Launch();
         }
 
+        /// <summary>
+        /// 衝突時に呼ばれるコールバック。相手によって反射の処理を分岐する。
+        /// パドル → 当たり位置で反射角を計算し直して上書き。
+        /// 壁・ブロック → Box2D の鏡面反射に任せ、浅すぎる角度だけ後から矯正。
+        /// </summary>
         void OnCollisionEnter2D(Collision2D c)
         {
             if (stats == null) return;
 
             // パドルとの衝突は、Box2Dの自然な反射ではなく
             // 「当たった位置による反射角」で上書きする（ブロック崩しらしい挙動）
-            if (c.collider.GetComponent<PaddleController>() != null)
+            // CompareTag は GetComponent より速い（タグ文字列はインターン化されたID比較）
+            if (c.collider.CompareTag("Paddle"))
             {
                 ReflectFromPaddle(c.collider.bounds);
                 return;
