@@ -11,8 +11,12 @@ namespace MCPTest
     /// </summary>
     public class BreakoutGameManager : MonoBehaviour
     {
-        public int score = 0;
-        public int lives = 3;
+        // 初期残機。値はインスペクタで設定すること
+        [SerializeField] private int initialLives;
+
+        // 外公開はプロパティで read-only にし、内部から書き換える
+        public int Score { get; private set; }
+        public int Lives { get; private set; }
 
         // 状態が変化したことを他クラスに通知したい場合に使う static イベント
         public static event Action<GameState> OnStateChanged;
@@ -22,7 +26,9 @@ namespace MCPTest
 
         void Awake()
         {
-            // 起動時に必ず Playing から始める（テストや再起動時のリセット）
+            Score = 0;
+            Lives = initialLives;
+            // ドメインリロード無効化時に static State が前回プレイから持ち越されるのを防ぐ
             ChangeState(GameState.Playing);
         }
 
@@ -52,7 +58,7 @@ namespace MCPTest
         // ブロック破壊イベントの受け手
         void HandleBrickDestroyed(int points)
         {
-            score += points;
+            Score += points;
             // 残ブロック0でクリア判定
             if (Brick.AliveCount <= 0)
             {
@@ -63,9 +69,9 @@ namespace MCPTest
         // ボール落下イベントの受け手
         void HandleBallFell()
         {
-            lives--;
-            // lives==0 でも次の1球は遊べる仕様。負になった瞬間にゲームオーバー
-            if (lives < 0)
+            Lives--;
+            // Lives==0 でも次の1球は遊べる仕様。負になった瞬間にゲームオーバー
+            if (Lives < 0)
             {
                 ChangeState(GameState.GameOver);
             }
@@ -79,8 +85,8 @@ namespace MCPTest
             style.fontSize = 32;
             style.fontStyle = FontStyle.Bold;
             style.normal.textColor = Color.white;
-            GUI.Label(new Rect(20, 16, 400, 48), $"Score: {score}", style);
-            GUI.Label(new Rect(20, 60, 400, 48), $"Lives: {lives}", style);
+            GUI.Label(new Rect(20, 16, 400, 48), $"Score: {Score}", style);
+            GUI.Label(new Rect(20, 60, 400, 48), $"Lives: {Lives}", style);
 
             if (State == GameState.GameOver)
             {
