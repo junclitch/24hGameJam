@@ -11,6 +11,7 @@ public class GameClearManager : MonoBehaviour
     [SerializeField] private GameObject _startPoint;
     [SerializeField] private GameObject _titlePoint;
     [SerializeField] private GameObject _endPoint;
+    [SerializeField] private AudioClip _decideClip;
 
     private bool _isPointerOverStart;
     private bool _isPointerOverTitle;
@@ -63,18 +64,22 @@ public class GameClearManager : MonoBehaviour
     private void StartGame()
     {
         Debug.Log("ゲーム開始");
-        SceneManager.LoadScene("ScrollAction");
+        ScrollAction.DecideSoundPlayer.Play(_decideClip);
+        // ゲームオーバーのリトライ・クリア後の再挑戦どちらも Shop を経由してから本編に戻す導線に統一
+        SceneManager.LoadScene("Shop");
     }
 
     private void ReturnToTitle()
     {
         Debug.Log("タイトルに戻る");
+        ScrollAction.DecideSoundPlayer.Play(_decideClip);
         SceneManager.LoadScene("Title");
     }
 
     private void ExitGame()
     {
         Debug.Log("ゲーム終了");
+        ScrollAction.DecideSoundPlayer.Play(_decideClip);
         Application.Quit();
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;

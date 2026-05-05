@@ -71,5 +71,9 @@ namespace ScrollAction
         // 転がる実行中フラグ。RollingAction が押下継続中に true をセットし、
         // PlayerController が Tick 後に読み出して PlayerAnimatorBridge へ橋渡しする
         public bool isRolling;
+
+        // ジェットパック噴射中フラグ。JetpackAction が燃料を消費して上昇しているフレームに true をセットし、
+        // PlayerController が読み出して JetpackSE が噴射音を鳴らす判定に使う
+        public bool isJetpacking;
     }
 }

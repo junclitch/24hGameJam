@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece97290d56257f438a36dabb9506058, type: 3}
   m_Name: GroundEvasion
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.GroundEvasionAction
-  buyPrice: 25
-  sellPrice: 25
+  buyPrice: 80
+  sellPrice: 80

@@ -10,6 +10,7 @@ namespace ScrollAction
     public class GroundEvasionAction : PlayerAction
     {
         public override string DisplayName => "地上回避";
+        public override string HelpText => "地上で Shift";
 
         public override void OnFixedTick(PlayerActionContext ctx, int count)
         {

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace ScrollAction
@@ -13,6 +14,10 @@ namespace ScrollAction
     public class WallKickAction : PlayerAction
     {
         public override string DisplayName => "壁キック";
+        public override string HelpText => "空中で壁に張り付き Space";
+
+        /// <summary>壁キックの蹴り出しが実行された瞬間に発火。SE 等が購読する。</summary>
+        public static event Action OnWallKicked;
 
         [Header("壁検出")]
         // プレイヤー中心から左右に伸ばすレイの長さ (units)。bodyCollider 半幅 + 余裕で設定する
@@ -99,6 +104,7 @@ namespace ScrollAction
                     // キック実行: 壁とは反対方向に水平速度、上向きに垂直速度
                     ctx.rb.linearVelocity = new Vector2(-wallSide * kickHorizontalSpeed, kickVerticalSpeed);
                     phase = Phase.Kicked;
+                    OnWallKicked?.Invoke();
                 }
             }
             else // Kicked

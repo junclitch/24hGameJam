@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88064df66f7c1194fb21846893d6a419, type: 3}
   m_Name: Sliding
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.SlidingAction
-  buyPrice: 40
-  sellPrice: 40
+  buyPrice: 120
+  sellPrice: 120
   speedMultiplier: 2
   staticBoostSpeed: 10
   deceleration: 8

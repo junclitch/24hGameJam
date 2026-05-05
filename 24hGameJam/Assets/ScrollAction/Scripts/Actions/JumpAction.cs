@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace ScrollAction
@@ -11,6 +12,10 @@ namespace ScrollAction
     public class JumpAction : PlayerAction
     {
         public override string DisplayName => "ジャンプ";
+        public override string HelpText => "Space / ↑ / W";
+
+        /// <summary>ジャンプが実際に発動した瞬間に発火。SE 等が購読する。</summary>
+        public static event Action OnJumped;
 
         // スタッカブル (上限なし)。0 を返すと Shop が +/- カウンタ表示にする
         public override int MaxCount => 0;
@@ -25,6 +30,7 @@ namespace ScrollAction
 
             ctx.rb.linearVelocity = new Vector2(ctx.rb.linearVelocity.x, ctx.stats.jumpForce);
             jumpsUsed++;
+            OnJumped?.Invoke();
         }
 
         public override void OnLanded() => jumpsUsed = 0;

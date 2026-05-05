@@ -17,7 +17,7 @@ namespace ScrollAction
         [SerializeField] private Rect barRect;
 
         // 未設定時の初期表示位置。コンポーネント追加直後でも見える状態にするための保険
-        private static readonly Rect DefaultBarRect = new(24f, 24f, 240f, 28f);
+        private static readonly Rect DefaultBarRect = new(24f, 24f, 320f, 40f);
 
         /// <summary>コンポーネント新規追加時 (or インスペクタ Reset時) にデフォルト矩形を入れる。</summary>
         void Reset()
@@ -49,7 +49,7 @@ namespace ScrollAction
             }
 
             // ラベル (バー上に重ねる)
-            var labelStyle = new GUIStyle(GUI.skin.label) { fontStyle = FontStyle.Bold, alignment = TextAnchor.MiddleCenter };
+            var labelStyle = new GUIStyle(GUI.skin.label) { fontStyle = FontStyle.Bold, alignment = TextAnchor.MiddleCenter, fontSize = 20 };
             labelStyle.normal.textColor = Color.white;
             GUI.Label(rect, $"JETPACK {Mathf.RoundToInt(fuel * 100f)}%", labelStyle);
         }

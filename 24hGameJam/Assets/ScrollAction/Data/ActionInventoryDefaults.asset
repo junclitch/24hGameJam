@@ -21,4 +21,4 @@ MonoBehaviour:
     count: 1
   - action: {fileID: 11400000, guid: 6c0638daaa3da424aa7d77fcfd25d0fe, type: 2}
     count: 1
-  initialMoney: 1000
+  initialMoney: 700

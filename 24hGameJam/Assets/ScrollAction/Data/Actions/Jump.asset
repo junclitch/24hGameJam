@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1754a15a69cc1dc4dbeb61aa0edbeab8, type: 3}
   m_Name: Jump
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.JumpAction
-  buyPrice: 20
-  sellPrice: 20
+  buyPrice: 120
+  sellPrice: 120

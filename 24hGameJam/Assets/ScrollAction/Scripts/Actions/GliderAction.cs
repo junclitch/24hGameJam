@@ -12,6 +12,7 @@ namespace ScrollAction
     public class GliderAction : PlayerAction
     {
         public override string DisplayName => "グライダー";
+        public override string HelpText => "空中で F 長押し";
 
         [Header("空中ブースト")]
         // 空中グライド中の walkSpeed 倍率 (1.0 = 強化なし)。少しだけ強くする想定なので 1.2〜1.4 程度

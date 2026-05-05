@@ -12,6 +12,7 @@ namespace ScrollAction
     public class RollingAction : PlayerAction
     {
         public override string DisplayName => "転がる";
+        public override string HelpText => "地上で Q 長押し";
 
         [Header("移動")]
         // 転がり中の水平移動速度 (units/sec)。歩きより少し速い値を SO で設定する

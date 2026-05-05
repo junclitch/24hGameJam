@@ -12,6 +12,9 @@ namespace ScrollAction
         /// <summary>ショップUIなどに表示される能力名。</summary>
         public abstract string DisplayName { get; }
 
+        /// <summary>操作説明。ActionHelpOverlay が画面に常時表示する。受動アクションは空文字でよい。</summary>
+        public virtual string HelpText => "";
+
         /// <summary>
         /// 最大所持数。1 = bool型 (所持/未所持)、2以上 = 上限付きスタック、0 = 無制限スタック。
         /// Shop の UI 形式 (トグルボタン or +/-) もこの値で分岐する。
@@ -36,5 +39,8 @@ namespace ScrollAction
 
         /// <summary>ゲーム起動時に1度だけ呼ばれる。SO に NonSerialized 状態を持つ場合の初期化用。</summary>
         public virtual void OnSessionInit() { }
+
+        /// <summary>Shop で購入が成立した瞬間に呼ばれる。例: Jetpack を買い直した時に燃料を満タンへ戻す用。</summary>
+        public virtual void OnPurchased() { }
     }
 }

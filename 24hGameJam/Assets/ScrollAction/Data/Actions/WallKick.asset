@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4b3c2d1e9f8c5b6d3a4e7f2c8b9d1a, type: 3}
   m_Name: WallKick
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.WallKickAction
-  buyPrice: 50
-  sellPrice: 50
+  buyPrice: 200
+  sellPrice: 200
   wallCheckDistance: 0.6
   kickHorizontalSpeed: 14
   kickVerticalSpeed: 14

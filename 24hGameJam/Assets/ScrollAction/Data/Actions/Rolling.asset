@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3f7c2d4a9b6c1e5d8f2a7b4c9e6d3a, type: 3}
   m_Name: Rolling
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.RollingAction
-  buyPrice: 35
-  sellPrice: 35
+  buyPrice: 120
+  sellPrice: 120
   rollingSpeed: 9
   rollingSizeY: 0.5

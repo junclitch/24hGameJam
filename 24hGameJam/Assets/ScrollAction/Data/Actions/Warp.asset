@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c4d6e2f8a1b5c3e7d4f9a6b2e8c1d5f, type: 3}
   m_Name: Warp
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.WarpAction
-  buyPrice: 50
-  sellPrice: 50
+  buyPrice: 220
+  sellPrice: 220
   warpDistance: 4
   warpDuration: 0.5
   teleportFraction: 0.5

@@ -12,6 +12,7 @@ namespace ScrollAction
     public class JetpackAction : PlayerAction
     {
         public override string DisplayName => "ジェットパック";
+        public override string HelpText => "Space / ↑ / W 長押しで上昇";
 
         [Header("噴射")]
         // 長押し中の維持上昇速度 (units/sec)。値はインスペクタ (Jetpack.asset) で調整する。
@@ -44,6 +45,9 @@ namespace ScrollAction
                 float vy = ctx.rb.linearVelocity.y;
                 if (vy < riseSpeed)
                     ctx.rb.linearVelocity = new Vector2(ctx.rb.linearVelocity.x, riseSpeed);
+
+                // 効果音判定用フラグ。JetpackSE が読み出して Jet.wav の Play/Stop を切替える
+                ctx.isJetpacking = true;
             }
             else if (!ctx.jetpackHeld)
             {
@@ -54,5 +58,6 @@ namespace ScrollAction
 
         public override void OnRespawn() => currentFuel = maxFuel;
         public override void OnSessionInit() => currentFuel = maxFuel;
+        public override void OnPurchased() => currentFuel = maxFuel;
     }
 }
