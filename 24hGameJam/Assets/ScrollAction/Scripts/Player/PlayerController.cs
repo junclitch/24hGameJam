@@ -67,6 +67,9 @@ namespace ScrollAction
         // RollingAction が今フレーム転がり中か。AnimatorBridge が読み出す
         public bool IsRolling { get; private set; }
 
+        // JetpackAction が今フレーム噴射中か。JetpackSE が Jet.wav の再生/停止判定に使う
+        public bool IsJetpacking { get; private set; }
+
         // 接地判定を有効にするか (アクション所持 OR 一時猶予)
         private bool EffectiveHasGroundCheck =>
             (inventory != null && inventory.HasAny<GroundCheckAction>()) || tempGroundCheckGrace;
@@ -179,6 +182,7 @@ namespace ScrollAction
             ctx.wallKickSide = 0f;
             ctx.isWarping = false;
             ctx.isRolling = false;
+            ctx.isJetpacking = false;
 
             // 各アクションを順に処理
             foreach (var slot in inventory.owned)
@@ -195,6 +199,7 @@ namespace ScrollAction
             WallKickSide = ctx.wallKickSide;
             IsWarping = ctx.isWarping;
             IsRolling = ctx.isRolling;
+            IsJetpacking = ctx.isJetpacking;
 
             jumpRequested = false;
             evasionRequested = false;

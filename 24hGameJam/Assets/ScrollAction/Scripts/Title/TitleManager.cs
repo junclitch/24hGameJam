@@ -8,6 +8,7 @@ public class TitleManager : MonoBehaviour
 	[SerializeField] private Button _endButton;
 	[SerializeField] private GameObject _startPoint;
 	[SerializeField] private GameObject _endPoint;
+	[SerializeField] private AudioClip _decideClip;
 
 	private bool _isPointerOverStart;
 	private bool _isPointerOverEnd;
@@ -53,14 +54,16 @@ public class TitleManager : MonoBehaviour
 	{
 		// ゲーム開始の処理をここに追加
 		Debug.Log("ゲーム開始");
-		// シーン遷移 
-		UnityEngine.SceneManagement.SceneManager.LoadScene("ScrollAction");
+		ScrollAction.DecideSoundPlayer.Play(_decideClip);
+		// Shop で装備を整えてから ScrollAction 本編へ進ませるため、開始導線は Shop に統一する
+		UnityEngine.SceneManagement.SceneManager.LoadScene("Shop");
 	}
 
 	private void ExitGame()
 	{
 		// ゲーム終了の処理をここに追加
 		Debug.Log("ゲーム終了");
+		ScrollAction.DecideSoundPlayer.Play(_decideClip);
 		Application.Quit();
 #if UNITY_EDITOR
 		UnityEditor.EditorApplication.isPlaying = false;

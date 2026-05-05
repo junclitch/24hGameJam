@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9b5f34e8600334facfb0170456bd0c, type: 3}
   m_Name: GroundCheck
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.GroundCheckAction
-  buyPrice: 30
-  sellPrice: 30
+  buyPrice: 250
+  sellPrice: 250

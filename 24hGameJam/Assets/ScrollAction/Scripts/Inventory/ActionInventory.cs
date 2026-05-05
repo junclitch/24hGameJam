@@ -75,6 +75,8 @@ namespace ScrollAction
                 owned.Add(slot);
             }
             slot.count++;
+            // 購入直後の状態リセット (例: Jetpack の燃料を満タンへ)
+            action.OnPurchased();
             NotifyChanged();
         }
 

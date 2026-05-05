@@ -700,6 +700,7 @@ MonoBehaviour:
   _endButton: {fileID: 1438404835}
   _startPoint: {fileID: 1302413242}
   _endPoint: {fileID: 797287104}
+  _decideClip: {fileID: 8300000, guid: 8133e75f1c2b1a54586e73698724d560, type: 3}
 --- !u!1 &2095320128
 GameObject:
   m_ObjectHideFlags: 0

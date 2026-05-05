@@ -9,7 +9,8 @@ namespace ScrollAction
     [CreateAssetMenu(fileName = "HorizontalMoveAction", menuName = "ScrollAction/Actions/Horizontal Move")]
     public class HorizontalMoveAction : PlayerAction
     {
-        public override string DisplayName => "左右移動";
+        public override string DisplayName => "歩き";
+        public override string HelpText => "← → / A D";
 
         public override void OnFixedTick(PlayerActionContext ctx, int count)
         {

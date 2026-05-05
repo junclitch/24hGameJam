@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b022d5c1a3413c346985e11cb0792c3a, type: 3}
   m_Name: AirEvasion
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.AirEvasionAction
-  buyPrice: 30
-  sellPrice: 30
+  buyPrice: 100
+  sellPrice: 100

@@ -11,6 +11,7 @@ namespace ScrollAction
     public class AirEvasionAction : PlayerAction
     {
         public override string DisplayName => "空中回避";
+        public override string HelpText => "空中で Shift";
 
         // スタッカブル (上限なし)
         public override int MaxCount => 0;
