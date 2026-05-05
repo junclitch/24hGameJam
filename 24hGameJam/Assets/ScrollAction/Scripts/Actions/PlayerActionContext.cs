@@ -29,6 +29,9 @@ namespace ScrollAction
         // グライダー長押し継続入力 (F キー)。押している間 true
         public bool gliderHeld;
 
+        // スライディング発動入力 (Z キー)。押下フレームのみ true (jumpRequested と同パターン)
+        public bool slidingRequested;
+
         // 接地状態。GroundCheckAction 所持有無に応じて PlayerController が毎フレーム計算
         public bool isGrounded;
 
@@ -42,5 +45,9 @@ namespace ScrollAction
         // グライダー実行中フラグ。GliderAction が条件成立時に true をセットし、
         // PlayerController が Tick 後に読み出して PlayerAnimatorBridge へ橋渡しする
         public bool isGliding;
+
+        // スライディング実行中フラグ。SlidingAction が滑走中に true をセットし、
+        // PlayerController が Tick 後に読み出して PlayerAnimatorBridge へ橋渡しする
+        public bool isSliding;
     }
 }

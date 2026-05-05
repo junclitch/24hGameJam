@@ -22,6 +22,7 @@ namespace ScrollAction
         private static readonly int IsGroundedHash = Animator.StringToHash("IsGrounded");
         private static readonly int IsCrouchingHash = Animator.StringToHash("IsCrouching");
         private static readonly int IsGlidingHash = Animator.StringToHash("IsGliding");
+        private static readonly int IsSlidingHash = Animator.StringToHash("IsSliding");
 
         void Awake()
         {
@@ -44,6 +45,7 @@ namespace ScrollAction
             animator.SetBool(IsGroundedHash, controller.IsGrounded);
             animator.SetBool(IsCrouchingHash, controller.IsCrouching);
             animator.SetBool(IsGlidingHash, controller.IsGliding);
+            animator.SetBool(IsSlidingHash, controller.IsSliding);
 
             // 進行方向に応じて左右反転。微速時はバタつき防止で維持
             if (spriteRenderer != null && speed > idleSpeedThreshold)
