@@ -426,6 +426,60 @@ Assets/
 
 ---
 
+## 確認・撮影プロトコル (完了報告前に必ず実施)
+
+### 静的レイアウト (時間と無関係なもの)
+GameObject 配置 / UI レイアウト / シーン構成 / 単一 sprite 表示の確認は同期描画スクショで OK:
+```csharp
+cam.targetTexture = rt;
+cam.Render();          // 同期: 即時描画
+cam.targetTexture = null;
+RenderTexture.active = rt;
+tex.ReadPixels(...);
+File.WriteAllBytes(path, tex.EncodeToPNG());
+```
+
+### 動的・アニメーション (時間で変化するもの)
+**単発スクショで完了判定しない。** アニメーション・物理挙動・状態遷移は以下のいずれかで確認する:
+
+1. **連続フレームを同期撮影 → 1枚ずつ目視**
+   ```csharp
+   for (int i = 0; i < frameCount; i++) {
+       anim.Update(1f / sampleRate);
+       cam.Render();  // 同期撮影
+       // save as frame_NNN.png
+   }
+   ```
+2. **ffmpeg で動画化して目視**
+   ```bash
+   ffmpeg -framerate 6 -i frame_%03d.png -vf "scale=400:-1" anim.mp4
+   ```
+3. **ユーザーに実機録画を依頼** — 入力に応じた状態遷移など、自動化困難な操作は最初からこれを使う
+
+### 撮影時の禁止事項
+- ❌ `ScreenCapture.CaptureScreenshot` を非同期で使ってすぐ次の処理に進む (撮影は次フレーム末尾に遅延し、その間に状態が変わる)
+- ❌ `QueuePlayerLoopUpdate` + `Sleep` で「待てば撮れる」と仮定 (MCP 経由では Unity 主スレッドがブロックされて進まないことがある)
+- ❌ 強制配置 (`transform.position = ...`) して即撮る (物理が落ち着いていない / 接地判定未走行のまま撮ってしまう)
+- ❌ 640×360 程度のサムネイルだけで判定 (数 px のずれが見落とされる → 200% 以上ズームしたクロップで足元/エッジを照合)
+
+### 撮影前のチェックリスト
+1. **状態を意図通りにセット** (Animator パラメータ・rb.velocity・transform)
+2. **状態を「適用」させる** (`anim.Update(dt) × 数回` / `fixedUpdate.Invoke × 数回` を手動で呼ぶ)
+3. **同期描画で撮る** (`Camera.Render()` → `ReadPixels` → `EncodeToPNG`)
+4. **撮影後に状態をログ出力** (`sprite.name`、`transform.position` 等を return して撮影意図とのズレを検証)
+
+### ユーザー観察 > Claude の数値検証
+- **ユーザーが視覚的に観測した事象は、Claude の数値検証より優先する**
+- 「数値は一致しているのに視覚で違和感」と言われたら、まず**「数値が見ているもの」と「視覚が見ているもの」が違う何かを指している可能性**を疑う
+- 反論する前に、自分の検証用スクショを開示してユーザーと一緒に確認する
+
+### Sprite 関連の追加チェック
+- 新規スプライトをスライスしたら **各フレームを個別に extract して目視** (印刷参考のラベル・ガイド線・余白が rect 内に紛れ込んでいないか)
+- pivot 位置 (例 `(0.5, 0)`) が**絵の足元**と一致しているか確認 — `sr.bounds.bottom` は **rect の底辺**であって**絵の足元**とは限らない
+- 不安なら `sr.bounds.bottom` 位置に小さな赤クアッドをデバッグマーカーとして配置し、絵の実位置とのズレを可視化
+
+---
+
 ## 回答時のフォーマット
 
 コード生成時は以下の形式で回答すること:
