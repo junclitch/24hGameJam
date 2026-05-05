@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 01d9acc18e89d3347a824780779ebf69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4624104005354400692
+    second: stage84_overview4_0
+  - first:
+      213: -3852375732645563159
+    second: stage84_overview4_1
+  - first:
+      213: -7175462143734619389
+    second: stage84_overview4_2
+  - first:
+      213: -5135760799921865714
+    second: stage84_overview4_3
+  - first:
+      213: 6715905240838808698
+    second: stage84_overview4_4
+  - first:
+      213: -4452972558282408125
+    second: stage84_overview4_5
+  - first:
+      213: -8864925314589334282
+    second: stage84_overview4_6
+  - first:
+      213: 6909086692731814945
+    second: stage84_overview4_7
+  - first:
+      213: -5408907789050839962
+    second: stage84_overview4_8
+  - first:
+      213: 5210373486994295422
+    second: stage84_overview4_9
+  - first:
+      213: 8778936272507825419
+    second: stage84_overview4_10
+  - first:
+      213: 3668198034837387080
+    second: stage84_overview4_11
+  - first:
+      213: -309455323240498005
+    second: stage84_overview4_12
+  - first:
+      213: -919860667212429185
+    second: stage84_overview4_13
+  - first:
+      213: -8730497728570015966
+    second: stage84_overview4_14
+  - first:
+      213: 4293030347938340310
+    second: stage84_overview4_15
+  - first:
+      213: -8367984679536874971
+    second: stage84_overview4_16
+  - first:
+      213: 121074343834626837
+    second: stage84_overview4_17
+  - first:
+      213: -1086333929322898616
+    second: stage84_overview4_18
+  - first:
+      213: 6343463890671448448
+    second: stage84_overview4_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stage84_overview4_0
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 490
+        width: 229
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44d36c18e1e3dfb0800000000000000
+      internalID: -4624104005354400692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_1
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 504
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e473529eac998ac0800000000000000
+      internalID: -3852375732645563159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 457
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3036f6f8233ab6c90800000000000000
+      internalID: -7175462143734619389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_3
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 449
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cf74d43cc1ab8b0800000000000000
+      internalID: -5135760799921865714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_4
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 390
+        width: 99
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74a161fb30b33d50800000000000000
+      internalID: 6715905240838808698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_5
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 410
+        width: 62
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34fb3051d0dd332c0800000000000000
+      internalID: -4452972558282408125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_6
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 390
+        width: 99
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f4e88f056579f480800000000000000
+      internalID: -8864925314589334282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_7
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 429
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12488aabdb102ef50800000000000000
+      internalID: 6909086692731814945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 390
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66cf7c20603bfe4b0800000000000000
+      internalID: -5408907789050839962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_9
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 390
+        width: 99
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a8867a417fe4840800000000000000
+      internalID: 5210373486994295422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_10
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 390
+        width: 158
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0dee9ce60c05d970800000000000000
+      internalID: 8778936272507825419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_11
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 390
+        width: 61
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847b4408dae08e230800000000000000
+      internalID: 3668198034837387080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_12
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 390
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac7568e50894bbf0800000000000000
+      internalID: -309455323240498005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_13
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 390
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7803f7c89ffb33f0800000000000000
+      internalID: -919860667212429185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_14
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 390
+        width: 100
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22fba30729a07d680800000000000000
+      internalID: -8730497728570015966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 390
+        width: 81
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd16d22b58e39b30800000000000000
+      internalID: 4293030347938340310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_16
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 390
+        width: 236
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a2b4af442fedb80800000000000000
+      internalID: -8367984679536874971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_17
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 390
+        width: 41
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b2da769742ea100800000000000000
+      internalID: 121074343834626837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_18
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 390
+        width: 158
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b11430c019ce0f0800000000000000
+      internalID: -1086333929322898616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_overview4_19
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 390
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0813df8acc2880850800000000000000
+      internalID: 6343463890671448448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      stage84_overview4_0: -4624104005354400692
+      stage84_overview4_1: -3852375732645563159
+      stage84_overview4_10: 8778936272507825419
+      stage84_overview4_11: 3668198034837387080
+      stage84_overview4_12: -309455323240498005
+      stage84_overview4_13: -919860667212429185
+      stage84_overview4_14: -8730497728570015966
+      stage84_overview4_15: 4293030347938340310
+      stage84_overview4_16: -8367984679536874971
+      stage84_overview4_17: 121074343834626837
+      stage84_overview4_18: -1086333929322898616
+      stage84_overview4_19: 6343463890671448448
+      stage84_overview4_2: -7175462143734619389
+      stage84_overview4_3: -5135760799921865714
+      stage84_overview4_4: 6715905240838808698
+      stage84_overview4_5: -4452972558282408125
+      stage84_overview4_6: -8864925314589334282
+      stage84_overview4_7: 6909086692731814945
+      stage84_overview4_8: -5408907789050839962
+      stage84_overview4_9: 5210373486994295422
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 6b5c25dd59d912a428e1adcea1870b8d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4210579759604943443
+    second: stage84_v6_uniform_0
+  - first:
+      213: -5499880782976048089
+    second: stage84_v6_uniform_1
+  - first:
+      213: 8893013063894703051
+    second: stage84_v6_uniform_2
+  - first:
+      213: 1204109155140099639
+    second: stage84_v6_uniform_3
+  - first:
+      213: 5342894140976739588
+    second: stage84_v6_uniform_4
+  - first:
+      213: 4002591970420291448
+    second: stage84_v6_uniform_5
+  - first:
+      213: 880337277951327206
+    second: stage84_v6_uniform_6
+  - first:
+      213: 4446706404311529624
+    second: stage84_v6_uniform_7
+  - first:
+      213: -7603768784317458265
+    second: stage84_v6_uniform_8
+  - first:
+      213: 8222830014066940076
+    second: stage84_v6_uniform_9
+  - first:
+      213: 223380016240722462
+    second: stage84_v6_uniform_10
+  - first:
+      213: 286219942420830073
+    second: stage84_v6_uniform_11
+  - first:
+      213: 2140309350343148328
+    second: stage84_v6_uniform_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stage84_v6_uniform_0
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 490
+        width: 229
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ac3b59bfbfe6a30800000000000000
+      internalID: 4210579759604943443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_1
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 519
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72427b7419f7ca3b0800000000000000
+      internalID: -5499880782976048089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 474
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb1a50b3445a6b70800000000000000
+      internalID: 8893013063894703051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_3
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 462
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73edbee95ead5b010800000000000000
+      internalID: 1204109155140099639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_4
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 406
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4053f61d9e5c52a40800000000000000
+      internalID: 5342894140976739588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_5
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 406
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8777bb1c0301c8730800000000000000
+      internalID: 4002591970420291448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_6
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 434
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebb2de0716973c00800000000000000
+      internalID: 880337277951327206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_7
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 376
+        width: 353
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89871714aefd5bd30800000000000000
+      internalID: 4446706404311529624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_8
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 376
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8dd80c39cf97690800000000000000
+      internalID: -7603768784317458265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_9
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 376
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca851e4d45c5d1270800000000000000
+      internalID: 8222830014066940076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_10
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 376
+        width: 237
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1203f5f0fa991300800000000000000
+      internalID: 223380016240722462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_11
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 376
+        width: 81
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97750ab658bd8f300800000000000000
+      internalID: 286219942420830073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_v6_uniform_12
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 376
+        width: 548
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82386a8a308e3bd10800000000000000
+      internalID: 2140309350343148328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      stage84_v6_uniform_0: 4210579759604943443
+      stage84_v6_uniform_1: -5499880782976048089
+      stage84_v6_uniform_10: 223380016240722462
+      stage84_v6_uniform_11: 286219942420830073
+      stage84_v6_uniform_12: 2140309350343148328
+      stage84_v6_uniform_2: 8893013063894703051
+      stage84_v6_uniform_3: 1204109155140099639
+      stage84_v6_uniform_4: 5342894140976739588
+      stage84_v6_uniform_5: 4002591970420291448
+      stage84_v6_uniform_6: 880337277951327206
+      stage84_v6_uniform_7: 4446706404311529624
+      stage84_v6_uniform_8: -7603768784317458265
+      stage84_v6_uniform_9: 8222830014066940076
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
