@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: bf5b4c5748d69864998ab32ec7915ea6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5385765577360639956
+    second: stage84_closeup_pit1_0
+  - first:
+      213: 2612157198463299237
+    second: stage84_closeup_pit1_1
+  - first:
+      213: -8197487406993740157
+    second: stage84_closeup_pit1_2
+  - first:
+      213: 4791111871162676639
+    second: stage84_closeup_pit1_3
+  - first:
+      213: 297155207086541478
+    second: stage84_closeup_pit1_4
+  - first:
+      213: 5859911134018168558
+    second: stage84_closeup_pit1_5
+  - first:
+      213: 6505583092431269905
+    second: stage84_closeup_pit1_6
+  - first:
+      213: 8535101359733357815
+    second: stage84_closeup_pit1_7
+  - first:
+      213: 2520751854743442661
+    second: stage84_closeup_pit1_8
+  - first:
+      213: -5124999925280411690
+    second: stage84_closeup_pit1_9
+  - first:
+      213: 5362890071686008082
+    second: stage84_closeup_pit1_10
+  - first:
+      213: -736306527982493677
+    second: stage84_closeup_pit1_11
+  - first:
+      213: -5276483825389155306
+    second: stage84_closeup_pit1_12
+  - first:
+      213: 394609208129032376
+    second: stage84_closeup_pit1_13
+  - first:
+      213: -4923116168832843424
+    second: stage84_closeup_pit1_14
+  - first:
+      213: -2542895296792009839
+    second: stage84_closeup_pit1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_0
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 446
+        width: 365
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d78b12f1451eba40800000000000000
+      internalID: 5385765577360639956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 235
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae62e7d12f304420800000000000000
+      internalID: 2612157198463299237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 235
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e666fa2acac3e80800000000000000
+      internalID: -8197487406993740157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 235
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95fec7ccd27d7240800000000000000
+      internalID: 4791111871162676639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_4
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 235
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa0d812615bf1400800000000000000
+      internalID: 297155207086541478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_5
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 235
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee662861126925150800000000000000
+      internalID: 5859911134018168558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 235
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1103721ca59784a50800000000000000
+      internalID: 6505583092431269905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_7
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 235
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc3cdc3775c27670800000000000000
+      internalID: 8535101359733357815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_8
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 235
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4d3e4d4728bf220800000000000000
+      internalID: 2520751854743442661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_9
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 235
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dfe1cba8b750e8b0800000000000000
+      internalID: -5124999925280411690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_10
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 235
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d405c3b10dc6a40800000000000000
+      internalID: 5362890071686008082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_11
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 235
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3106dc92d1d18c5f0800000000000000
+      internalID: -736306527982493677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_12
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 235
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cc594bae926c6b0800000000000000
+      internalID: -5276483825389155306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_13
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 235
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b011abebfee97500800000000000000
+      internalID: 394609208129032376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_14
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 235
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0618cb0ade39dabb0800000000000000
+      internalID: -4923116168832843424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage84_closeup_pit1_15
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 236
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19363bd4332d5bcd0800000000000000
+      internalID: -2542895296792009839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      stage84_closeup_pit1_0: 5385765577360639956
+      stage84_closeup_pit1_1: 2612157198463299237
+      stage84_closeup_pit1_10: 5362890071686008082
+      stage84_closeup_pit1_11: -736306527982493677
+      stage84_closeup_pit1_12: -5276483825389155306
+      stage84_closeup_pit1_13: 394609208129032376
+      stage84_closeup_pit1_14: -4923116168832843424
+      stage84_closeup_pit1_15: -2542895296792009839
+      stage84_closeup_pit1_2: -8197487406993740157
+      stage84_closeup_pit1_3: 4791111871162676639
+      stage84_closeup_pit1_4: 297155207086541478
+      stage84_closeup_pit1_5: 5859911134018168558
+      stage84_closeup_pit1_6: 6505583092431269905
+      stage84_closeup_pit1_7: 8535101359733357815
+      stage84_closeup_pit1_8: 2520751854743442661
+      stage84_closeup_pit1_9: -5124999925280411690
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
