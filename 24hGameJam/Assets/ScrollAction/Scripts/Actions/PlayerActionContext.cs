@@ -23,6 +23,9 @@ namespace ScrollAction
         // ↓キー or S キーを「押している間」 true。離した瞬間に false (押下フレーム判定ではない)
         public bool crouchPressed;
 
+        // ジェットパック等「長押し継続」入力。jumpRequested とは別に、押している間 true が立つ
+        public bool jetpackHeld;
+
         // 接地状態。GroundCheckAction 所持有無に応じて PlayerController が毎フレーム計算
         public bool isGrounded;
 
