@@ -34,6 +34,10 @@ namespace ScrollAction
         private bool gliderHeld;
         // Z キー押下フレーム (SlidingAction が読む。1フレームのみ true、FixedUpdate末尾でクリア)
         private bool slidingRequested;
+        // C キー押下フレーム (WarpAction が読む。1フレームのみ true、FixedUpdate末尾でクリア)
+        private bool warpRequested;
+        // Q キー長押し継続入力 (RollingAction が読む)
+        private bool rollingHeld;
 
         // 一時的な接地猶予。リスポーン時に立ち、ショップから離れた瞬間に解除
         private bool tempGroundCheckGrace;
@@ -57,6 +61,11 @@ namespace ScrollAction
 
         // 壁キック中の壁向き (-1=左壁、+1=右壁、0=非実行中)。AnimatorBridge が flipX 決定に使う
         public float WallKickSide { get; private set; }
+        // WarpAction が今フレームワープ中か。AnimatorBridge が読み出す
+        public bool IsWarping { get; private set; }
+
+        // RollingAction が今フレーム転がり中か。AnimatorBridge が読み出す
+        public bool IsRolling { get; private set; }
 
         // 接地判定を有効にするか (アクション所持 OR 一時猶予)
         private bool EffectiveHasGroundCheck =>
@@ -114,6 +123,13 @@ namespace ScrollAction
             // スライディング発動入力 (Z キー押下フレーム)
             if (kb.zKey.wasPressedThisFrame)
                 slidingRequested = true;
+
+            // ワープ発動入力 (C キー押下フレーム)
+            if (kb.cKey.wasPressedThisFrame)
+                warpRequested = true;
+
+            // 転がる長押し継続入力 (Q キー)
+            rollingHeld = kb.qKey.isPressed;
         }
 
         /// <summary>
@@ -151,6 +167,8 @@ namespace ScrollAction
             ctx.jetpackHeld = jetpackHeld;
             ctx.gliderHeld = gliderHeld;
             ctx.slidingRequested = slidingRequested;
+            ctx.warpRequested = warpRequested;
+            ctx.rollingHeld = rollingHeld;
             ctx.isGrounded = grounded;
             ctx.justLanded = justLanded;
             // 各 Tick で再判定するので毎フレーム false 起点にする
@@ -159,6 +177,8 @@ namespace ScrollAction
             ctx.isSliding = false;
             ctx.isWallKicking = false;
             ctx.wallKickSide = 0f;
+            ctx.isWarping = false;
+            ctx.isRolling = false;
 
             // 各アクションを順に処理
             foreach (var slot in inventory.owned)
@@ -173,10 +193,13 @@ namespace ScrollAction
             IsSliding = ctx.isSliding;
             IsWallKicking = ctx.isWallKicking;
             WallKickSide = ctx.wallKickSide;
+            IsWarping = ctx.isWarping;
+            IsRolling = ctx.isRolling;
 
             jumpRequested = false;
             evasionRequested = false;
             slidingRequested = false;
+            warpRequested = false;
         }
 
         /// <summary>
