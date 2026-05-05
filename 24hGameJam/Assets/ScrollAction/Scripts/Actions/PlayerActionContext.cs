@@ -26,6 +26,9 @@ namespace ScrollAction
         // ジェットパック等「長押し継続」入力。jumpRequested とは別に、押している間 true が立つ
         public bool jetpackHeld;
 
+        // グライダー長押し継続入力 (F キー)。押している間 true
+        public bool gliderHeld;
+
         // 接地状態。GroundCheckAction 所持有無に応じて PlayerController が毎フレーム計算
         public bool isGrounded;
 
@@ -35,5 +38,9 @@ namespace ScrollAction
         // しゃがみ実行中フラグ。CrouchAction が条件成立時に true をセットし、
         // PlayerController が Tick 後に読み出して PlayerAnimatorBridge へ橋渡しする
         public bool isCrouching;
+
+        // グライダー実行中フラグ。GliderAction が条件成立時に true をセットし、
+        // PlayerController が Tick 後に読み出して PlayerAnimatorBridge へ橋渡しする
+        public bool isGliding;
     }
 }

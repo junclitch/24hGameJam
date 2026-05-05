@@ -30,6 +30,8 @@ namespace ScrollAction
         private bool crouchPressed;
         // ジャンプ系キーが押され続けているか (JetpackAction が読む長押し状態)
         private bool jetpackHeld;
+        // F キー長押し状態 (GliderAction が読む)
+        private bool gliderHeld;
 
         // 一時的な接地猶予。リスポーン時に立ち、ショップから離れた瞬間に解除
         private bool tempGroundCheckGrace;
@@ -41,6 +43,9 @@ namespace ScrollAction
 
         // CrouchAction が今フレームしゃがみ動作を実行したか。AnimatorBridge が読み出す
         public bool IsCrouching { get; private set; }
+
+        // GliderAction が今フレームグライド動作を実行したか。AnimatorBridge が読み出す
+        public bool IsGliding { get; private set; }
 
         // 接地判定を有効にするか (アクション所持 OR 一時猶予)
         private bool EffectiveHasGroundCheck =>
@@ -91,6 +96,9 @@ namespace ScrollAction
 
             // ジェットパック用の長押し継続入力。ジャンプキーと同経路だが押下フレームではなく isPressed で読む
             jetpackHeld = kb.spaceKey.isPressed || kb.upArrowKey.isPressed || kb.wKey.isPressed;
+
+            // グライダー長押し入力 (F キー)
+            gliderHeld = kb.fKey.isPressed;
         }
 
         /// <summary>
@@ -126,10 +134,12 @@ namespace ScrollAction
             ctx.evasionRequested = evasionRequested;
             ctx.crouchPressed = crouchPressed;
             ctx.jetpackHeld = jetpackHeld;
+            ctx.gliderHeld = gliderHeld;
             ctx.isGrounded = grounded;
             ctx.justLanded = justLanded;
             // 各 Tick で再判定するので毎フレーム false 起点にする
             ctx.isCrouching = false;
+            ctx.isGliding = false;
 
             // 各アクションを順に処理
             foreach (var slot in inventory.owned)
@@ -140,6 +150,7 @@ namespace ScrollAction
 
             // CrouchAction が今フレーム発火していれば true。AnimatorBridge から読まれる
             IsCrouching = ctx.isCrouching;
+            IsGliding = ctx.isGliding;
 
             jumpRequested = false;
             evasionRequested = false;
