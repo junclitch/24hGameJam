@@ -32,6 +32,12 @@ namespace ScrollAction
         // スライディング発動入力 (Z キー)。押下フレームのみ true (jumpRequested と同パターン)
         public bool slidingRequested;
 
+        // ワープ発動入力 (C キー)。押下フレームのみ true
+        public bool warpRequested;
+
+        // 転がる長押し継続入力 (Q キー)。押している間 true
+        public bool rollingHeld;
+
         // 接地状態。GroundCheckAction 所持有無に応じて PlayerController が毎フレーム計算
         public bool isGrounded;
 
@@ -49,5 +55,13 @@ namespace ScrollAction
         // スライディング実行中フラグ。SlidingAction が滑走中に true をセットし、
         // PlayerController が Tick 後に読み出して PlayerAnimatorBridge へ橋渡しする
         public bool isSliding;
+
+        // ワープ実行中フラグ。WarpAction がワープ継続中に true をセットし、
+        // PlayerController が Tick 後に読み出して PlayerAnimatorBridge へ橋渡しする
+        public bool isWarping;
+
+        // 転がる実行中フラグ。RollingAction が押下継続中に true をセットし、
+        // PlayerController が Tick 後に読み出して PlayerAnimatorBridge へ橋渡しする
+        public bool isRolling;
     }
 }
