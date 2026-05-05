@@ -52,6 +52,12 @@ namespace ScrollAction
         // SlidingAction が今フレーム滑走中か。AnimatorBridge が読み出す
         public bool IsSliding { get; private set; }
 
+        // WallKickAction が今フレーム壁キック中 (ウィンドアップ〜キック後アニメ保持中) か。AnimatorBridge が読み出す
+        public bool IsWallKicking { get; private set; }
+
+        // 壁キック中の壁向き (-1=左壁、+1=右壁、0=非実行中)。AnimatorBridge が flipX 決定に使う
+        public float WallKickSide { get; private set; }
+
         // 接地判定を有効にするか (アクション所持 OR 一時猶予)
         private bool EffectiveHasGroundCheck =>
             (inventory != null && inventory.HasAny<GroundCheckAction>()) || tempGroundCheckGrace;
@@ -151,6 +157,8 @@ namespace ScrollAction
             ctx.isCrouching = false;
             ctx.isGliding = false;
             ctx.isSliding = false;
+            ctx.isWallKicking = false;
+            ctx.wallKickSide = 0f;
 
             // 各アクションを順に処理
             foreach (var slot in inventory.owned)
@@ -163,6 +171,8 @@ namespace ScrollAction
             IsCrouching = ctx.isCrouching;
             IsGliding = ctx.isGliding;
             IsSliding = ctx.isSliding;
+            IsWallKicking = ctx.isWallKicking;
+            WallKickSide = ctx.wallKickSide;
 
             jumpRequested = false;
             evasionRequested = false;

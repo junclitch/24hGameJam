@@ -23,6 +23,7 @@ namespace ScrollAction
         private static readonly int IsCrouchingHash = Animator.StringToHash("IsCrouching");
         private static readonly int IsGlidingHash = Animator.StringToHash("IsGliding");
         private static readonly int IsSlidingHash = Animator.StringToHash("IsSliding");
+        private static readonly int IsWallKickingHash = Animator.StringToHash("IsWallKicking");
 
         void Awake()
         {
@@ -46,11 +47,17 @@ namespace ScrollAction
             animator.SetBool(IsCrouchingHash, controller.IsCrouching);
             animator.SetBool(IsGlidingHash, controller.IsGliding);
             animator.SetBool(IsSlidingHash, controller.IsSliding);
+            animator.SetBool(IsWallKickingHash, controller.IsWallKicking);
 
-            // 進行方向に応じて左右反転。微速時はバタつき防止で維持
-            if (spriteRenderer != null && speed > idleSpeedThreshold)
+            // 壁キック中は wallKickSide で flipX を決める。
+            // wall-jump 原画は「右壁を蹴って左に飛ぶ」向きなので、左壁時 (wallKickSide<0) のみ反転して右向きにする。
+            // 通常時は進行方向ベース。微速時はバタつき防止で維持
+            if (spriteRenderer != null)
             {
-                spriteRenderer.flipX = vx < 0f;
+                if (controller.IsWallKicking)
+                    spriteRenderer.flipX = controller.WallKickSide < 0f;
+                else if (speed > idleSpeedThreshold)
+                    spriteRenderer.flipX = vx < 0f;
             }
         }
     }

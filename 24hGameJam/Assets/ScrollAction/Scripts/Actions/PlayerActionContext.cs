@@ -49,5 +49,14 @@ namespace ScrollAction
         // スライディング実行中フラグ。SlidingAction が滑走中に true をセットし、
         // PlayerController が Tick 後に読み出して PlayerAnimatorBridge へ橋渡しする
         public bool isSliding;
+
+        // 壁キック実行中フラグ。WallKickAction がウィンドアップ〜キック後アニメ完了まで true をセットし、
+        // PlayerController が Tick 後に読み出して PlayerAnimatorBridge へ橋渡しする
+        public bool isWallKicking;
+
+        // 壁キック中の壁の向き (-1=左壁、+1=右壁、0=非実行中)。
+        // PlayerAnimatorBridge が flipX 決定に使う。スプライト原画は「右壁を蹴って左に飛ぶ」向きなので、
+        // wallKickSide<0 のときに flipX=true で左右反転する想定
+        public float wallKickSide;
     }
 }
