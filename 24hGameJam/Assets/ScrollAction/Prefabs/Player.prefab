@@ -175,6 +175,7 @@ GameObject:
   - component: {fileID: 2066112867392624187}
   - component: {fileID: 6295878142677446869}
   - component: {fileID: 3298972362306419374}
+  - component: {fileID: 5294836172958463017}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -348,3 +349,23 @@ MonoBehaviour:
   groundCheck: {fileID: 7565508908503355007}
   rb: {fileID: 2066112867392624187}
   bodyCollider: {fileID: 0}
+--- !u!114 &5294836172958463017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8088146309128276922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2d4f7c1e9a4365af2c8d5e0b6f3a91, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.JetpackGaugeUI
+  inventory: {fileID: 11400000, guid: cc5087f2b96e0634aa5e0e6d63515441, type: 2}
+  jetpackAction: {fileID: 11400000, guid: 4d8a2f6e3c9b1a7e5d2f8c4a9b3e1d6f, type: 2}
+  barRect:
+    serializedVersion: 2
+    x: 24
+    y: 24
+    width: 240
+    height: 28

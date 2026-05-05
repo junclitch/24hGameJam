@@ -28,6 +28,8 @@ namespace ScrollAction
         private bool jumpRequested;
         private bool evasionRequested;
         private bool crouchPressed;
+        // ジャンプ系キーが押され続けているか (JetpackAction が読む長押し状態)
+        private bool jetpackHeld;
 
         // 一時的な接地猶予。リスポーン時に立ち、ショップから離れた瞬間に解除
         private bool tempGroundCheckGrace;
@@ -86,6 +88,9 @@ namespace ScrollAction
 
             // しゃがみは「押している間」の継続入力 (ジャンプ/回避と違い wasPressedThisFrame ではない)
             crouchPressed = kb.downArrowKey.isPressed || kb.sKey.isPressed;
+
+            // ジェットパック用の長押し継続入力。ジャンプキーと同経路だが押下フレームではなく isPressed で読む
+            jetpackHeld = kb.spaceKey.isPressed || kb.upArrowKey.isPressed || kb.wKey.isPressed;
         }
 
         /// <summary>
@@ -120,6 +125,7 @@ namespace ScrollAction
             ctx.jumpRequested = jumpRequested;
             ctx.evasionRequested = evasionRequested;
             ctx.crouchPressed = crouchPressed;
+            ctx.jetpackHeld = jetpackHeld;
             ctx.isGrounded = grounded;
             ctx.justLanded = justLanded;
             // 各 Tick で再判定するので毎フレーム false 起点にする
