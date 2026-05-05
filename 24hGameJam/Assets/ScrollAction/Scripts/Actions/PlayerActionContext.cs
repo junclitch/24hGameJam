@@ -20,11 +20,17 @@ namespace ScrollAction
         public float facingDir;
         public bool jumpRequested;
         public bool evasionRequested;
+        // ↓キー or S キーを「押している間」 true。離した瞬間に false (押下フレーム判定ではない)
+        public bool crouchPressed;
 
         // 接地状態。GroundCheckAction 所持有無に応じて PlayerController が毎フレーム計算
         public bool isGrounded;
 
         // 着地した瞬間のフレームか (空中→接地に切り替わったフレームで true)
         public bool justLanded;
+
+        // しゃがみ実行中フラグ。CrouchAction が条件成立時に true をセットし、
+        // PlayerController が Tick 後に読み出して PlayerAnimatorBridge へ橋渡しする
+        public bool isCrouching;
     }
 }

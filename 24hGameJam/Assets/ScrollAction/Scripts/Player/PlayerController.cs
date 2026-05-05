@@ -27,6 +27,7 @@ namespace ScrollAction
         private float facingDir = 1f;
         private bool jumpRequested;
         private bool evasionRequested;
+        private bool crouchPressed;
 
         // 一時的な接地猶予。リスポーン時に立ち、ショップから離れた瞬間に解除
         private bool tempGroundCheckGrace;
@@ -35,6 +36,9 @@ namespace ScrollAction
         private readonly PlayerActionContext ctx = new();
 
         public bool IsGrounded { get; private set; }
+
+        // CrouchAction が今フレームしゃがみ動作を実行したか。AnimatorBridge が読み出す
+        public bool IsCrouching { get; private set; }
 
         // 接地判定を有効にするか (アクション所持 OR 一時猶予)
         private bool EffectiveHasGroundCheck =>
@@ -79,6 +83,9 @@ namespace ScrollAction
                 jumpRequested = true;
             if (kb.leftShiftKey.wasPressedThisFrame || kb.rightShiftKey.wasPressedThisFrame)
                 evasionRequested = true;
+
+            // しゃがみは「押している間」の継続入力 (ジャンプ/回避と違い wasPressedThisFrame ではない)
+            crouchPressed = kb.downArrowKey.isPressed || kb.sKey.isPressed;
         }
 
         /// <summary>
@@ -112,8 +119,11 @@ namespace ScrollAction
             ctx.facingDir = facingDir;
             ctx.jumpRequested = jumpRequested;
             ctx.evasionRequested = evasionRequested;
+            ctx.crouchPressed = crouchPressed;
             ctx.isGrounded = grounded;
             ctx.justLanded = justLanded;
+            // 各 Tick で再判定するので毎フレーム false 起点にする
+            ctx.isCrouching = false;
 
             // 各アクションを順に処理
             foreach (var slot in inventory.owned)
@@ -121,6 +131,9 @@ namespace ScrollAction
                 if (slot?.action == null || slot.count <= 0) continue;
                 slot.action.OnFixedTick(ctx, slot.count);
             }
+
+            // CrouchAction が今フレーム発火していれば true。AnimatorBridge から読まれる
+            IsCrouching = ctx.isCrouching;
 
             jumpRequested = false;
             evasionRequested = false;
