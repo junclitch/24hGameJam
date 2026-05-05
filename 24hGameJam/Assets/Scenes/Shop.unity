@@ -3194,6 +3194,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 5813023386140785607, guid: 31865e7fbaf3b2440b54a0797e08bfb1, type: 3}
+      propertyPath: catalog.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813023386140785607, guid: 31865e7fbaf3b2440b54a0797e08bfb1, type: 3}
+      propertyPath: 'catalog.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c2e8a1f5d4b6c7e3a8d2f1b4e6c9a5d, type: 2}
     - target: {fileID: 6084749064631164619, guid: 31865e7fbaf3b2440b54a0797e08bfb1, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 2

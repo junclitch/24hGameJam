@@ -56,6 +56,11 @@ namespace ScrollAction
         // SlidingAction が今フレーム滑走中か。AnimatorBridge が読み出す
         public bool IsSliding { get; private set; }
 
+        // WallKickAction が今フレーム壁キック中 (ウィンドアップ〜キック後アニメ保持中) か。AnimatorBridge が読み出す
+        public bool IsWallKicking { get; private set; }
+
+        // 壁キック中の壁向き (-1=左壁、+1=右壁、0=非実行中)。AnimatorBridge が flipX 決定に使う
+        public float WallKickSide { get; private set; }
         // WarpAction が今フレームワープ中か。AnimatorBridge が読み出す
         public bool IsWarping { get; private set; }
 
@@ -170,6 +175,8 @@ namespace ScrollAction
             ctx.isCrouching = false;
             ctx.isGliding = false;
             ctx.isSliding = false;
+            ctx.isWallKicking = false;
+            ctx.wallKickSide = 0f;
             ctx.isWarping = false;
             ctx.isRolling = false;
 
@@ -184,6 +191,8 @@ namespace ScrollAction
             IsCrouching = ctx.isCrouching;
             IsGliding = ctx.isGliding;
             IsSliding = ctx.isSliding;
+            IsWallKicking = ctx.isWallKicking;
+            WallKickSide = ctx.wallKickSide;
             IsWarping = ctx.isWarping;
             IsRolling = ctx.isRolling;
 
