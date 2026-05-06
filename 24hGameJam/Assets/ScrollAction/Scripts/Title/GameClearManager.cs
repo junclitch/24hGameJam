@@ -27,6 +27,26 @@ public class GameClearManager : MonoBehaviour
         SetPointActive(_endPoint, false);
     }
 
+    private void OnEnable()
+    {
+        // WebGL で Pointer ポーリングだと初回クリックを取りこぼすため、Button.onClick (EventSystem 経由) で受ける。
+        if (_startButton != null) _startButton.onClick.AddListener(StartGame);
+        if (_titleButton != null) _titleButton.onClick.AddListener(ReturnToTitle);
+        if (_endButton != null) _endButton.onClick.AddListener(ExitGame);
+    }
+
+    private void OnDisable()
+    {
+        if (_startButton != null) _startButton.onClick.RemoveListener(StartGame);
+        if (_titleButton != null) _titleButton.onClick.RemoveListener(ReturnToTitle);
+        if (_endButton != null) _endButton.onClick.RemoveListener(ExitGame);
+    }
+
+
+    /// <summary>
+    /// ホバー表示専用のポーリング。クリック検出は Button.onClick (OnEnable で bind) に任せているので、
+    /// ここではポイント位置を読んで各 Point オブジェクトの表示トグルしかしない。
+    /// </summary>
     private void Update()
     {
         var pointer = Pointer.current;
@@ -41,24 +61,6 @@ public class GameClearManager : MonoBehaviour
         bool isPointerOverTitle = IsPointerOverButton(_titleButton, pointerPosition);
         bool isPointerOverEnd = IsPointerOverButton(_endButton, pointerPosition);
         UpdateHoverState(isPointerOverStart, isPointerOverTitle, isPointerOverEnd);
-
-        if (!pointer.press.wasPressedThisFrame)
-        {
-            return;
-        }
-
-        if (_isPointerOverStart)
-        {
-            StartGame();
-        }
-        else if (_isPointerOverTitle)
-        {
-            ReturnToTitle();
-        }
-        else if (_isPointerOverEnd)
-        {
-            ExitGame();
-        }
     }
 
     private void StartGame()

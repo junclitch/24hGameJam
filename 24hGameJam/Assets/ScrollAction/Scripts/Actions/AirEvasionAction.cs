@@ -1,20 +1,24 @@
+using System;
 using UnityEngine;
 
 namespace ScrollAction
 {
     /// <summary>
-    /// 空中回避アクション。所持数 = 1空中滞在中に撃てる回数。着地で消費数リセット。
-    /// 地上回避と回避入力 (Shift) を共有するが、IsGrounded が false の時のみ反応する。
-    /// 地上回避と同時に発火しないよう、地上回避→空中回避の順に Tick が回ることを前提にしている。
+    /// 空中ダッシュアクション。所持数 = 1空中滞在中に撃てる回数。着地で消費数リセット。
+    /// 地上ダッシュとダッシュ入力 (Shift) を共有するが、IsGrounded が false の時のみ反応する。
+    /// 地上ダッシュと同時に発火しないよう、地上ダッシュ→空中ダッシュの順に Tick が回ることを前提にしている。
     /// </summary>
     [CreateAssetMenu(fileName = "AirEvasionAction", menuName = "ScrollAction/Actions/Air Evasion")]
     public class AirEvasionAction : PlayerAction
     {
-        public override string DisplayName => "空中回避";
-        public override string HelpText => "空中で Shift";
+        public override string DisplayName => "空中ダッシュ";
+        public override string HelpText => "[Shift] 空中";
 
         // スタッカブル (上限なし)
         public override int MaxCount => 0;
+
+        /// <summary>空中ダッシュが実際に発動した瞬間に発火。SE 等が購読する。</summary>
+        public static event Action OnDashed;
 
         // 離地後に消費した回数。OnLanded で 0 にリセット
         [System.NonSerialized] private int airUsed;
@@ -27,6 +31,7 @@ namespace ScrollAction
             float dir = Mathf.Abs(ctx.inputX) > 0.01f ? Mathf.Sign(ctx.inputX) : ctx.facingDir;
             ctx.rb.linearVelocity = new Vector2(dir * ctx.stats.evasionSpeed, ctx.rb.linearVelocity.y);
             airUsed++;
+            OnDashed?.Invoke();
         }
 
         public override void OnLanded() => airUsed = 0;

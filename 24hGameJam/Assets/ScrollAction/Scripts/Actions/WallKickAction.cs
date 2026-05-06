@@ -14,7 +14,7 @@ namespace ScrollAction
     public class WallKickAction : PlayerAction
     {
         public override string DisplayName => "壁キック";
-        public override string HelpText => "空中で壁に張り付き Space";
+        public override string HelpText => "[Space] 空中で壁付近";
 
         /// <summary>壁キックの蹴り出しが実行された瞬間に発火。SE 等が購読する。</summary>
         public static event Action OnWallKicked;

@@ -16,7 +16,7 @@ namespace ScrollAction
     public class SlidingAction : PlayerAction
     {
         public override string DisplayName => "スライディング";
-        public override string HelpText => "地上で Z";
+        public override string HelpText => "[Z] 地上";
 
         [Header("初速")]
         // 移動中の発動時に |vx| に掛ける倍率 (慣性ブースト)

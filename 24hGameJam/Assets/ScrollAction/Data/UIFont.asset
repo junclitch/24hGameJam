@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0827bca10d7cf25439c0302093d46bc2, type: 3}
+  m_Name: UIFont
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.UIFontAsset
+  font: {fileID: 12800000, guid: df9dc72b1a43b1a41a64ada05de259a9, type: 3}

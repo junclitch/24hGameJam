@@ -13,7 +13,7 @@ namespace ScrollAction
     public class CrouchAction : PlayerAction
     {
         public override string DisplayName => "しゃがみ";
-        public override string HelpText => "↓ / S を押す";
+        public override string HelpText => "[↓ / S 長押し] 地上";
 
         [Header("しゃがみ時の当たり判定 (BoxCollider2D の高さ・ローカル単位)")]
         // 縮小後のローカル高さ。.asset で設定する (例: 元1.0 → 0.5 で半分)

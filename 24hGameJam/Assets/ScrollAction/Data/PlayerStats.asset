@@ -20,3 +20,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   evasionSpeed: 18
+  safeGroundCheckRange: 0.6

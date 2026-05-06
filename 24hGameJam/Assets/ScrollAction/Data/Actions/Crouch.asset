@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b25f2583b1aff47b0bf3a49a1e6268, type: 3}
   m_Name: Crouch
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.CrouchAction
-  buyPrice: 40
-  sellPrice: 40
+  buyPrice: 100
+  sellPrice: 100
   crouchedSizeY: 0.5

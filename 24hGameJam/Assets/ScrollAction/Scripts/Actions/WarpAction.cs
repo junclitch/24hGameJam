@@ -14,7 +14,7 @@ namespace ScrollAction
     public class WarpAction : PlayerAction
     {
         public override string DisplayName => "ワープ";
-        public override string HelpText => "C で進行方向にワープ";
+        public override string HelpText => "[C] 進行方向に瞬間移動";
 
         [Header("ワープ")]
         // 進行方向に瞬間移動する距離 (units)
