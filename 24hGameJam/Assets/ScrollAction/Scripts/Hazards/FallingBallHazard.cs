@@ -32,16 +32,23 @@ namespace ScrollAction
         // 落下→着地 (bottom wait 入り) の瞬間を 1 回だけ検出するためのフラグ
         private bool wasFalling;
 
+        // 当たり判定の有効/無効を切替えるコライダ。落下中フェーズだけ true にする
+        // (= 上待機/下着地中は球が見えていても殺さない、理不尽な「居座り判定」を防ぐため)
+        private Collider2D hitCollider;
+
         /// <summary>落下から着地に切替わった瞬間に発火。SE 等が距離ベース音量計算で購読する。位置は球の世界座標。</summary>
         public static event Action<Vector3> OnImpact;
 
         void Awake()
         {
             startTime = Time.time;
+            hitCollider = GetComponent<Collider2D>();
             // 初期表示位置を topY に固定 (Update 1回目までの絵がブレないように)
             var p = transform.position;
             p.y = topY;
             transform.position = p;
+            // 初期は待機状態 (= 当たり判定オフ)。Update で初回判定が入るまで lethal にしない
+            if (hitCollider != null) hitCollider.enabled = false;
         }
 
         void Update()
@@ -75,6 +82,12 @@ namespace ScrollAction
             // 落下中 → 着地に切替わった瞬間だけ OnImpact を発火 (SE 重複防止)
             if (wasFalling && impacted) OnImpact?.Invoke(transform.position);
             wasFalling = falling;
+
+            // 当たり判定は落下中フェーズだけ。
+            // 上で待機 = 画面外で見えないのに死ぬ (ジェットパック等で高所に上がった時の事故) を防ぐ
+            // 下で着地 = 視覚的に「もう落ちきった」と見えるのに残る判定で死ぬ理不尽さを防ぐ
+            if (hitCollider != null && hitCollider.enabled != falling)
+                hitCollider.enabled = falling;
 
             var p = transform.position;
             p.y = y;

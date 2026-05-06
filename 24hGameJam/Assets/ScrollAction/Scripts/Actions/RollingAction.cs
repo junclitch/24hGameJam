@@ -34,6 +34,9 @@ namespace ScrollAction
         [System.NonSerialized] private float originalSizeY = -1f;
         [System.NonSerialized] private float originalOffsetY;
         [System.NonSerialized] private bool currentlyShrunk;
+        // ブリッジ突入時に保存する元 gravityScale。ブリッジ解除時に復元する
+        [System.NonSerialized] private float originalGravityScale = -1f;
+        [System.NonSerialized] private bool gravityOverridden;
 
         public override void OnFixedTick(PlayerActionContext ctx, int count)
         {
@@ -71,19 +74,39 @@ namespace ScrollAction
             if (wantRoll)
             {
                 ApplyShrunkCollider(box);
-                // ブリッジ中は vy=0 で落下を抑止 (重力・先行落下を打ち消し、水平に渡らせる)
+                // ブリッジ中は vy=0 + 重力を切って水平に渡らせる。
+                // vy=0 だけでは Physics2D.Simulate が直後に gravity*gravityScale*dt を加算するので、
+                // 1 fixed step あたり gravityScale*9.81*dt^2 ≒ 6mm 落下し、数フレームで小石上端を割って側面衝突する。
+                // gravityScale=0 を立てて重力そのものを停止させる (ブリッジ解除時に restoreGravityScale で戻す)。
+                if (bridging)
+                {
+                    if (!gravityOverridden)
+                    {
+                        originalGravityScale = ctx.rb.gravityScale;
+                        gravityOverridden = true;
+                    }
+                    ctx.rb.gravityScale = 0f;
+                }
+                else
+                {
+                    RestoreGravityScale(ctx.rb);
+                }
                 float vy = bridging ? 0f : ctx.rb.linearVelocity.y;
                 ctx.rb.linearVelocity = new Vector2(ctx.inputX * rollingSpeed, vy);
                 ctx.isRolling = true;
             }
-            else if (currentlyShrunk)
+            else
             {
-                RestoreCollider(box);
+                RestoreGravityScale(ctx.rb);
+                if (currentlyShrunk) RestoreCollider(box);
             }
         }
 
         /// <summary>
-        /// 進行方向の前方 maxGapWidth 地点に、足元判定半径内で地面があるかを返す。
+        /// 進行方向に長さ maxGapWidth・高さ 2*groundCheckRadius の帯を OverlapBox で走査し、
+        /// その帯内に地面があるかを返す。1.5u 先の1点プローブだと、小石間ピッチによっては
+        /// grounded でもブリッジでもない死角(プローブが次足場を飛び越す区間)が出来てしまうため、
+        /// "groundCheck から前方 maxGapWidth まで連続で見る" 帯状判定に拡張している。
         /// maxGapWidth=0 や 入力ゼロでは false (=ブリッジしない)。
         /// </summary>
         private bool CanBridgeSmallGap(PlayerActionContext ctx)
@@ -91,8 +114,11 @@ namespace ScrollAction
             if (maxGapWidth <= 0f) return false;
             if (Mathf.Abs(ctx.inputX) < 0.1f) return false;
             float dir = Mathf.Sign(ctx.inputX);
-            Vector2 probe = (Vector2)ctx.groundCheck.position + new Vector2(dir * maxGapWidth, 0f);
-            return Physics2D.OverlapCircle(probe, ctx.stats.groundCheckRadius, ctx.stats.groundLayer) != null;
+            Vector2 origin = ctx.groundCheck.position;
+            float r = ctx.stats.groundCheckRadius;
+            Vector2 center = origin + new Vector2(dir * maxGapWidth * 0.5f, 0f);
+            Vector2 size = new Vector2(maxGapWidth, r * 2f);
+            return Physics2D.OverlapBox(center, size, 0f, ctx.stats.groundLayer) != null;
         }
 
         public override void OnRespawn()
@@ -100,12 +126,23 @@ namespace ScrollAction
             // 物理コライダー復元はスナップショットを持ってないと出来ないので、フラグだけ落とす。
             // 次の Tick で wantRoll=false なら RestoreCollider が走る (CrouchAction と同方針)
             currentlyShrunk = false;
+            // gravityScale は次 Tick の RestoreGravityScale で復元される (rb への参照が必要なのでここでは触らない)
         }
 
         public override void OnSessionInit()
         {
             originalSizeY = -1f;
             currentlyShrunk = false;
+            gravityOverridden = false;
+            originalGravityScale = -1f;
+        }
+
+        /// <summary>ブリッジ突入時に上書きした gravityScale を元に戻す。冪等。</summary>
+        private void RestoreGravityScale(Rigidbody2D rb)
+        {
+            if (!gravityOverridden) return;
+            rb.gravityScale = originalGravityScale;
+            gravityOverridden = false;
         }
 
         /// <summary>底面 (足元) を保ったまま高さだけ縮める。</summary>
