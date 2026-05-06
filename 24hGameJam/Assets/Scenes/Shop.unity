@@ -1137,6 +1137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.ActionHelpOverlay
   inventory: {fileID: 11400000, guid: cc5087f2b96e0634aa5e0e6d63515441, type: 2}
+  uiFont: {fileID: 11400000, guid: e39063f4548389940a1fe4d98d88515f, type: 2}
 --- !u!4 &793860254
 Transform:
   m_ObjectHideFlags: 0
@@ -2236,7 +2237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScrollAction.CameraExitTransition
   target: {fileID: 964896873}
   cam: {fileID: 1628005839}
-  nextSceneName: ScrollAction
+  nextSceneName: ScrollAction_MCP
 --- !u!81 &1628005843
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3132,6 +3133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 5813023386140785607, guid: 31865e7fbaf3b2440b54a0797e08bfb1, type: 3}
+      propertyPath: uiFont
+      value: 
+      objectReference: {fileID: 11400000, guid: e39063f4548389940a1fe4d98d88515f, type: 2}
     - target: {fileID: 6084749064631164619, guid: 31865e7fbaf3b2440b54a0797e08bfb1, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 2

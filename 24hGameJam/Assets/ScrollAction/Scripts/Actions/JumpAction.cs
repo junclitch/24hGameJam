@@ -12,7 +12,7 @@ namespace ScrollAction
     public class JumpAction : PlayerAction
     {
         public override string DisplayName => "ジャンプ";
-        public override string HelpText => "Space / ↑ / W";
+        public override string HelpText => "[Space / ↑ / W] 押下";
 
         /// <summary>ジャンプが実際に発動した瞬間に発火。SE 等が購読する。</summary>
         public static event Action OnJumped;

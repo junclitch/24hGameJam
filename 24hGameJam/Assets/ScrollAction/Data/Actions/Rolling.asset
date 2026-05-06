@@ -16,3 +16,4 @@ MonoBehaviour:
   sellPrice: 120
   rollingSpeed: 9
   rollingSizeY: 0.5
+  maxGapWidth: 1.5

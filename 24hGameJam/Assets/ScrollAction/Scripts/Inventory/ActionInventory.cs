@@ -25,6 +25,12 @@ namespace ScrollAction
         /// <summary>所持状態が変化した時に発火。Shop UI / PlayerController が再同期に使う。</summary>
         public event Action OnInventoryChanged;
 
+        /// <summary>購入が成立した瞬間に発火。SE 等が購読する。</summary>
+        public static event Action OnPurchased;
+
+        /// <summary>売却が成立した瞬間に発火。SE 等が購読する。</summary>
+        public static event Action OnSold;
+
         // 同セッション内で既に初期化済みかを示すフラグ。Domain Reload (Play押下) でクリアされる
         private static bool sessionInitialized;
 
@@ -44,6 +50,25 @@ namespace ScrollAction
         {
             for (int i = 0; i < owned.Count; i++)
                 if (owned[i].count > 0 && owned[i].action is T) return true;
+            return false;
+        }
+
+        /// <summary>
+        /// 指定型のアクションを 1 つ消費する (count を 1 減らす)。所持していなければ false を返す。
+        /// 残機消費など「リトライ用リソース」の減算に使う。0 になった枠は owned から削除される。
+        /// </summary>
+        public bool ConsumeOne<T>() where T : PlayerAction
+        {
+            for (int i = 0; i < owned.Count; i++)
+            {
+                if (owned[i].action is T && owned[i].count > 0)
+                {
+                    owned[i].count--;
+                    if (owned[i].count <= 0) owned.RemoveAt(i);
+                    NotifyChanged();
+                    return true;
+                }
+            }
             return false;
         }
 
@@ -78,6 +103,7 @@ namespace ScrollAction
             // 購入直後の状態リセット (例: Jetpack の燃料を満タンへ)
             action.OnPurchased();
             NotifyChanged();
+            OnPurchased?.Invoke();
         }
 
         /// <summary>所持数を1減らす。所持金に sellPrice を加算。0以下になったらリストから除去。</summary>
@@ -89,6 +115,7 @@ namespace ScrollAction
             slot.count--;
             if (slot.count <= 0) owned.Remove(slot);
             NotifyChanged();
+            OnSold?.Invoke();
         }
 
         private OwnedAction FindSlot(PlayerAction action)

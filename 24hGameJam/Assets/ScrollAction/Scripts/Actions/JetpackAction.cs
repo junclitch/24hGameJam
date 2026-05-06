@@ -12,7 +12,7 @@ namespace ScrollAction
     public class JetpackAction : PlayerAction
     {
         public override string DisplayName => "ジェットパック";
-        public override string HelpText => "Space / ↑ / W 長押しで上昇";
+        public override string HelpText => "[Space / ↑ / W 長押し] 空中で上昇";
 
         [Header("噴射")]
         // 長押し中の維持上昇速度 (units/sec)。値はインスペクタ (Jetpack.asset) で調整する。

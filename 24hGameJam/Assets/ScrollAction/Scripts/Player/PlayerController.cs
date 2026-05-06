@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace ScrollAction
 {
@@ -19,8 +21,17 @@ namespace ScrollAction
         [SerializeField] private Rigidbody2D rb;
         [SerializeField] private Collider2D bodyCollider;
 
-        // ゲーム開始時の位置。リスポーン時にここへ戻す
+        [Header("残機消費0時の遷移先 (Build Settings 登録済みであること)")]
+        [SerializeField] private string gameOverSceneName;
+
+        /// <summary>RespawnToStart が完了した直後に発火。CrumbleTile などのリセット先が購読する。</summary>
+        public static event Action OnPlayerRespawned;
+
+        // ゲーム開始時の位置。lastSafePosition の初期値 + フェールセーフ
         private Vector3 startPosition;
+
+        // 直近で「幅のある地面に立っていた」位置。死亡時のリスポーン地点として使う
+        private Vector3 lastSafePosition;
 
         // 入力 (Update側で集約しFixedUpdateで消化)
         private float inputX;
@@ -79,6 +90,7 @@ namespace ScrollAction
             if (rb == null) rb = GetComponent<Rigidbody2D>();
             if (bodyCollider == null) bodyCollider = GetComponent<Collider2D>();
             startPosition = transform.position;
+            lastSafePosition = startPosition;
 
             // ゲーム起動時に1度だけ所持品を初期値へ戻す
             if (inventory != null) inventory.EnsureInitializedThisSession();
@@ -208,6 +220,15 @@ namespace ScrollAction
         }
 
         /// <summary>
+        /// CheckpointTrigger から呼ばれる。リスポーン地点を上書きする。
+        /// 進行方向に到達した時のみ呼び出されることを CheckpointTrigger 側が保証する想定。
+        /// </summary>
+        public void SetRespawnPoint(Vector3 worldPos)
+        {
+            lastSafePosition = worldPos;
+        }
+
+        /// <summary>
         /// 接地判定アクションの所持 (or 一時猶予) に応じて Player コライダーの地面レイヤ衝突可否を切替える。
         /// 売却+猶予なし時は地面レイヤを excludeLayers に積み、地面をすり抜けるようにする。
         /// </summary>
@@ -229,20 +250,34 @@ namespace ScrollAction
         }
 
         /// <summary>
-        /// 初期位置へワープし、慣性をリセット。各アクションへも OnRespawn を通知する。
-        /// 接地判定アクション未所持の状態でも一時的に地面と衝突するよう猶予を立てる
-        /// (Shopまで辿り着いて買い直す動線を確保するため。Shopから離れた瞬間に解除)。
+        /// 残機を 1 消費して初期位置へリスポーン。残機が無く gameOverSceneName が設定されていれば GameOver シーンへ遷移。
+        /// gameOverSceneName 未設定なら残機 0 でも従来通り無限リトライ (旧ステージとの後方互換)。
+        /// 各アクションには OnRespawn を通知。接地判定アクション未所持時も一時的に地面と衝突
+        /// できるよう猶予を立てる (Shopまで辿り着いて買い直す動線を確保するため、Shopから離れた瞬間に解除)。
         /// </summary>
         public void RespawnToStart()
         {
+            bool consumed = inventory != null && inventory.ConsumeOne<LifeAction>();
+
+            // 残機 0 + GameOver シーン設定済み → 遷移して終了
+            if (!consumed && !string.IsNullOrEmpty(gameOverSceneName))
+            {
+                SceneManager.LoadScene(gameOverSceneName);
+                return;
+            }
+
+            // 通常リスポーン (残機消費成功 or GameOver シーン未設定のフォールバック)
+            // 直近の "安全地帯" に戻す。一度も安全地帯を通過していなければ Awake で startPosition が入っている
             rb.linearVelocity = Vector2.zero;
-            transform.position = startPosition;
+            transform.position = lastSafePosition;
 
             if (inventory != null)
                 foreach (var slot in inventory.owned) slot.action?.OnRespawn();
 
             tempGroundCheckGrace = true;
             SyncCollisionMask();
+
+            OnPlayerRespawned?.Invoke();
         }
 
         // 接地判定の可視化 (エディタ用)

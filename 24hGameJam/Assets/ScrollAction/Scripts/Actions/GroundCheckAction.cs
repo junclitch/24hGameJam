@@ -10,6 +10,6 @@ namespace ScrollAction
     public class GroundCheckAction : PlayerAction
     {
         public override string DisplayName => "接地判定";
-        public override string HelpText => "(常時ON)";
+        public override string HelpText => "(自動) 地面と衝突";
     }
 }

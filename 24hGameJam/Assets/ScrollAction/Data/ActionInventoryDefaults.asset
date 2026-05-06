@@ -21,4 +21,8 @@ MonoBehaviour:
     count: 1
   - action: {fileID: 11400000, guid: 6c0638daaa3da424aa7d77fcfd25d0fe, type: 2}
     count: 1
-  initialMoney: 700
+  - action: {fileID: 11400000, guid: 26b82ae0087aa8142ac461fef5459b5b, type: 2}
+    count: 3
+  - action: {fileID: 11400000, guid: f76a19b41c40e9245b5c2a0a5a4c01cc, type: 2}
+    count: 1
+  initialMoney: 0

@@ -30,5 +30,10 @@ namespace ScrollAction
         [Header("Evasion")]
         // 回避 (地上/空中共通) で与える水平方向の瞬間速度 (units/sec)
         public float evasionSpeed;
+
+        [Header("Respawn (安全地帯チェックポイント)")]
+        // 足元から左右にこの距離だけ離れた点で地面を確認。両方に地面があれば "幅のある安全地帯"
+        // と判定し、その位置を死亡時のリスポーン地点として記録する
+        public float safeGroundCheckRange;
     }
 }

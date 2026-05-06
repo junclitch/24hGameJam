@@ -10,12 +10,17 @@ namespace ScrollAction
     public class ActionHelpOverlay : MonoBehaviour
     {
         [SerializeField] private ActionInventory inventory;
+        [SerializeField] private UIFontAsset uiFont;
 
         // 画面下中央レイアウト用の固定値 (UIの見栄え調整なので const として保持)
         private const float PanelWidth = 460f;
         private const float ScreenMargin = 24f;
         private const float InnerPadding = 16f;
         private const int FontSize = 18;
+        // ウィンドウ表示時にレイアウトが端で欠けるのを防ぐため、1920x1080 設計に正規化して GUI.matrix で縮小する。
+        // フルスクリーン (>=1920x1080) のときは scale=1 で従来挙動。
+        private const float DesignWidth = 1920f;
+        private const float DesignHeight = 1080f;
 
         private GUIStyle labelStyle;
         private GUIStyle titleStyle;
@@ -28,10 +33,17 @@ namespace ScrollAction
 
             EnsureStyles();
 
+            var prevMatrix = GUI.matrix;
+            float scale = Mathf.Min(Screen.width / DesignWidth, Screen.height / DesignHeight, 1f);
+            if (scale < 1f)
+                GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(scale, scale, 1f));
+            float logicalW = Screen.width / scale;
+            float logicalH = Screen.height / scale;
+
             float rowH = FontSize + 12f;
             float panelH = rowH * (rows + 1) + 16f;
-            float x = (Screen.width - PanelWidth) * 0.5f;
-            float y = Screen.height - panelH - ScreenMargin;
+            float x = (logicalW - PanelWidth) * 0.5f;
+            float y = logicalH - panelH - ScreenMargin;
 
             GUI.Box(new Rect(x, y, PanelWidth, panelH), GUIContent.none);
 
@@ -46,12 +58,15 @@ namespace ScrollAction
                     $"{slot.action.DisplayName}: {slot.action.HelpText}", labelStyle);
                 rowY += rowH;
             }
+
+            GUI.matrix = prevMatrix;
         }
 
         private void EnsureStyles()
         {
             if (labelStyle != null) return;
             labelStyle = new GUIStyle(GUI.skin.label) { fontSize = FontSize };
+            if (uiFont != null && uiFont.Font != null) labelStyle.font = uiFont.Font;
             labelStyle.normal.textColor = Color.white;
             titleStyle = new GUIStyle(labelStyle) { fontStyle = FontStyle.Bold };
         }
